@@ -1,0 +1,17 @@
+{
+    "topics": [
+        {
+            "name": "type_check",
+            "messages": [
+                {
+                    "message": "Error in spec file (CriticalExploits.spec:35:14): Syntax error: unexpected token near `void`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (CriticalExploits.spec:197:5): Syntax error: unexpected token near `void`",
+                    "location": []
+                }
+            ]
+        }
+    ]
+}

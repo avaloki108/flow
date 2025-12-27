@@ -1,0 +1,227 @@
+[
+    {
+        "card_title": "general",
+        "content_type": "COMPLEX",
+        "content": [
+            {
+                "inner_title": "CLI Version",
+                "content_type": "FLAG",
+                "content": "8.6.1",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "branch",
+                "content_type": "FLAG",
+                "content": "main",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "dirty",
+                "content_type": "FLAG",
+                "content": "true",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "origin",
+                "content_type": "FLAG",
+                "content": "https://github.com/sablier-labs/flow.git",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "revision",
+                "content_type": "FLAG",
+                "content": "54bdeb7301adf603e27543df71fe9330acd0944f",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    },
+    {
+        "card_title": "files",
+        "content_type": "SIMPLE",
+        "content": [
+            {
+                "inner_title": "files",
+                "content_type": "SIMPLE",
+                "content": [
+                    "certora/harness/ERC20Mock.sol:ERC20Mock",
+                    "certora/harness/MockAggregatorV3.sol:MockAggregatorV3",
+                    "node_modules/@sablier/evm-utils/src/SablierComptroller.sol:SablierComptroller",
+                    "src/SablierFlow.sol:SablierFlow"
+                ],
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#files",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    },
+    {
+        "card_title": "options",
+        "content_type": "COMPLEX",
+        "content": [
+            {
+                "inner_title": "verify",
+                "content_type": "FLAG",
+                "content": "SablierFlow:certora/spec/flow.spec",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#verify",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "loop_iter",
+                "content_type": "FLAG",
+                "content": 3,
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#loop-iter",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "msg",
+                "content_type": "FLAG",
+                "content": "Flow v4 retry wait",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#msg",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "multi_assert_check",
+                "content_type": "FLAG",
+                "content": "true",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#multi-assert-check",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "optimistic_loop",
+                "content_type": "FLAG",
+                "content": "true",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#optimistic-loop",
+                "tooltip": "",
+                "unsound": true
+            },
+            {
+                "inner_title": "rule_sanity",
+                "content_type": "FLAG",
+                "content": "basic",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#rule-sanity",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "smt_timeout",
+                "content_type": "FLAG",
+                "content": 300,
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#smt-timeout",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "struct_link",
+                "content_type": "SIMPLE",
+                "content": [
+                    "SablierFlow:2=ERC20Mock"
+                ],
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#struct-link",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "wait_for_results",
+                "content_type": "FLAG",
+                "content": "none",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#wait-for-results",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    },
+    {
+        "card_title": "link",
+        "content_type": "SIMPLE",
+        "content": [
+            {
+                "inner_title": "link",
+                "content_type": "SIMPLE",
+                "content": [
+                    "SablierComptroller:oracle=MockAggregatorV3",
+                    "SablierFlow:comptroller=SablierComptroller"
+                ],
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#link",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    },
+    {
+        "card_title": "packages",
+        "content_type": "SIMPLE",
+        "content": [
+            {
+                "inner_title": "packages",
+                "content_type": "SIMPLE",
+                "content": [
+                    "@arbitrum=node_modules/@arbitrum",
+                    "@chainlink=node_modules/@chainlink",
+                    "@eth-optimism=node_modules/@eth-optimism",
+                    "@offchainlabs=node_modules/@offchainlabs",
+                    "@openzeppelin=node_modules/@openzeppelin",
+                    "@prb=node_modules/@prb",
+                    "@sablier=node_modules/@sablier",
+                    "@scroll-tech=node_modules/@scroll-tech",
+                    "@zksync=node_modules/@zksync",
+                    "forge-std=node_modules/forge-std"
+                ],
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#packages",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    },
+    {
+        "card_title": "solidity_compiler",
+        "content_type": "COMPLEX",
+        "content": [
+            {
+                "inner_title": "solc",
+                "content_type": "FLAG",
+                "content": "/home/dok/.svm/0.8.29/solc-0.8.29",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#solc",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "solc_evm_version",
+                "content_type": "FLAG",
+                "content": "shanghai",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#solc-evm-version",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "solc_optimize",
+                "content_type": "FLAG",
+                "content": 1000,
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#solc-optimize",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "solc_via_ir",
+                "content_type": "FLAG",
+                "content": "true",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#solc-via-ir",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    }
+]

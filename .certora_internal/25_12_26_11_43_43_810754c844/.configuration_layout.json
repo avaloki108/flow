@@ -1,0 +1,193 @@
+[
+    {
+        "card_title": "general",
+        "content_type": "COMPLEX",
+        "content": [
+            {
+                "inner_title": "CLI Version",
+                "content_type": "FLAG",
+                "content": "8.6.1",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "branch",
+                "content_type": "FLAG",
+                "content": "main",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "dirty",
+                "content_type": "FLAG",
+                "content": "true",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "origin",
+                "content_type": "FLAG",
+                "content": "https://github.com/sablier-labs/flow.git",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "revision",
+                "content_type": "FLAG",
+                "content": "54bdeb7301adf603e27543df71fe9330acd0944f",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    },
+    {
+        "card_title": "files",
+        "content_type": "SIMPLE",
+        "content": [
+            {
+                "inner_title": "files",
+                "content_type": "SIMPLE",
+                "content": [
+                    "./src/SablierFlow.sol"
+                ],
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#files",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    },
+    {
+        "card_title": "options",
+        "content_type": "COMPLEX",
+        "content": [
+            {
+                "inner_title": "verify",
+                "content_type": "FLAG",
+                "content": "SablierFlow:certora/spec/flow.spec",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#verify",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "java_args",
+                "content_type": "SIMPLE",
+                "content": [
+                    "-Xmx8G"
+                ],
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#java-args",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "loop_iter",
+                "content_type": "FLAG",
+                "content": 6,
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#loop-iter",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "msg",
+                "content_type": "FLAG",
+                "content": "audit:flow target:SablierFlow sha:54bdeb7",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#msg",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "multi_assert_check",
+                "content_type": "FLAG",
+                "content": "true",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#multi-assert-check",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "optimistic_loop",
+                "content_type": "FLAG",
+                "content": "true",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#optimistic-loop",
+                "tooltip": "",
+                "unsound": true
+            },
+            {
+                "inner_title": "prover_args",
+                "content_type": "SIMPLE",
+                "content": [
+                    "-backendStrategy singlerace",
+                    "-enableStorageAnalysis true"
+                ],
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#prover-args",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "rule_sanity",
+                "content_type": "FLAG",
+                "content": "basic",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#rule-sanity",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "smt_timeout",
+                "content_type": "FLAG",
+                "content": 600,
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#smt-timeout",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    },
+    {
+        "card_title": "packages",
+        "content_type": "SIMPLE",
+        "content": [
+            {
+                "inner_title": "packages",
+                "content_type": "SIMPLE",
+                "content": [
+                    "@arbitrum/=node_modules/@arbitrum/",
+                    "@chainlink/=node_modules/@chainlink/",
+                    "@eth-optimism/=node_modules/@eth-optimism/",
+                    "@offchainlabs/=node_modules/@offchainlabs/",
+                    "@openzeppelin/=node_modules/@openzeppelin/",
+                    "@prb/=node_modules/@prb/",
+                    "@sablier/=node_modules/@sablier/",
+                    "@scroll-tech/=node_modules/@scroll-tech/",
+                    "@zksync/=node_modules/@zksync/"
+                ],
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#packages",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    },
+    {
+        "card_title": "solidity_compiler",
+        "content_type": "COMPLEX",
+        "content": [
+            {
+                "inner_title": "solc",
+                "content_type": "FLAG",
+                "content": "/home/dok/.svm/0.8.29/solc-0.8.29",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#solc",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "solc_via_ir",
+                "content_type": "FLAG",
+                "content": "true",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#solc-via-ir",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    }
+]

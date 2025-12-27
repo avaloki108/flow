@@ -1,0 +1,20 @@
+Note: attribute msg value in CLI (Smoke test for SablierFlow) overrides value stored in conf file (Enhanced verification for SablierFlow - web3-certora v2.0.0)
+Saving last configuration file to .certora_internal/25_12_25_09_36_33_989675c34e/run.conf
+There is no TAC file. Going to script CertoraProver/certoraBuild.py to main_with_args()
+main build cache key computed based on {'files': ['src/SablierFlow.sol'], 'package_version_for_build_cache': 'certora-cli 8.6.1', 'packages': ['@arbitrum/=node_modules/@arbitrum', '@chainlink/=node_modules/@chainlink', '@eth-optimism/=node_modules/@eth-optimism', '@offchainlabs/=node_modules/@offchainlabs', '@openzeppelin/=node_modules/@openzeppelin', '@openzeppelin/contracts=node_modules/@openzeppelin/contracts', '@prb/=node_modules/@prb', '@prb/math=node_modules/@prb/math', '@sablier/=node_modules/@sablier', '@sablier/devkit=node_modules/@sablier/devkit', '@sablier/evm-utils=node_modules/@sablier/evm-utils', '@scroll-tech/=node_modules/@scroll-tech', '@zksync/=node_modules/@zksync', 'forge-std/=node_modules/forge-std', 'forge-std=node_modules/forge-std', 'husky=node_modules/husky', 'lint-staged=node_modules/lint-staged', 'prettier=node_modules/prettier', 'solhint=node_modules/solhint'], 'packages_path': 'node_modules', 'solc': '/home/dok/.svm/0.8.29/solc-0.8.29', 'solc_allow_path': '.', 'test_condition': 'True'}
+Creating dir /home/dok/web3/sabier/flow/.certora_internal/25_12_25_09_36_33_989675c34e/.certora_config
+In /home/dok/web3/sabier/flow/certora/spec/flow.spec, found the imports: []
+copying spec file /home/dok/web3/sabier/flow/certora/spec/flow.spec to /home/dok/web3/sabier/flow/.certora_internal/25_12_25_09_36_33_989675c34e/.certora_sources/.0_flow.spec.spec
+writing /home/dok/web3/sabier/flow/.certora_internal/25_12_25_09_36_33_989675c34e/.certora_verify.json
+Failed to run Certora Prover typechecker locally.
+Please check the errors below for problems in the specifications (.spec files) or the prover_args defined in the .conf file.
+[main] ERROR ALWAYS - Found errors in certora/spec/flow.spec:
+[main] ERROR ALWAYS - Error in spec file (flow.spec:4:77): Since CVL 2, methods block entries must end with `;`
+[main] ERROR ALWAYS - Error in spec file (flow.spec:4:85): Syntax error: unexpected token near `;`
+[main] ERROR ALWAYS - Error in spec file (flow.spec:7:63): Since CVL 2, methods block entries must end with `;`
+[main] ERROR ALWAYS - Error in spec file (flow.spec:7:71): Syntax error: unexpected token near `;`
+[main] ERROR ALWAYS - Error in spec file (flow.spec:14:46): Since CVL 2, methods block entries must end with `;`
+[main] ERROR ALWAYS - Error in spec file (flow.spec:14:54): Syntax error: unexpected token near `;`
+[main] ERROR ALWAYS - Error in spec file (flow.spec:16:99): Since CVL 2, methods block entries must end with `;`
+[main] ERROR ALWAYS - Error in spec file (flow.spec:16:107): Syntax error: unexpected token near `;`
+build failed

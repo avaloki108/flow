@@ -1,0 +1,13 @@
+Saving last configuration file to .certora_internal/25_12_26_14_18_42_6452993dfc/run.conf
+There is no TAC file. Going to script CertoraProver/certoraBuild.py to main_with_args()
+main build cache key computed based on {'files': ['src/SablierFlow.sol'], 'package_version_for_build_cache': 'certora-cli 8.6.1', 'packages': ['@openzeppelin=node_modules/@openzeppelin', '@prb=node_modules/@prb', '@sablier=node_modules/@sablier'], 'packages_path': 'node_modules', 'solc': '/home/dok/.svm/0.8.29/solc-0.8.29', 'solc_allow_path': '.', 'solc_via_ir': True, 'test_condition': 'True'}
+Creating dir /home/dok/web3/sabier/flow/.certora_internal/25_12_26_14_18_42_6452993dfc/.certora_config
+In /home/dok/web3/sabier/flow/certora/specs/CriticalExploits.spec, found the imports: []
+copying spec file /home/dok/web3/sabier/flow/certora/specs/CriticalExploits.spec to /home/dok/web3/sabier/flow/.certora_internal/25_12_26_14_18_42_6452993dfc/.certora_sources/.0_CriticalExploits.spec.spec
+writing /home/dok/web3/sabier/flow/.certora_internal/25_12_26_14_18_42_6452993dfc/.certora_verify.json
+Failed to run Certora Prover typechecker locally.
+Please check the errors below for problems in the specifications (.spec files) or the prover_args defined in the .conf file.
+[main] ERROR ALWAYS - Found errors in certora/specs/CriticalExploits.spec:
+[main] ERROR ALWAYS - Error in spec file (CriticalExploits.spec:32:14): Syntax error: unexpected token near `"void"`
+[main] ERROR ALWAYS - Error in spec file (CriticalExploits.spec:169:5): Syntax error: unexpected token near `"void"`
+build failed

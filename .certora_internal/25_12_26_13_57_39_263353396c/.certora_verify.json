@@ -1,0 +1,8 @@
+{
+    "importFilesToOrigRelpaths": {},
+    "primary_contract": "SablierFlow",
+    "specfile": "/home/dok/web3/sabier/flow/certora/specs/CriticalExploits.spec",
+    "specfileOrigRelpath": "certora/specs/CriticalExploits.spec",
+    "specfilesToImportDecls": {},
+    "type": "spec"
+}
