@@ -1,0 +1,21 @@
+{
+	"rules": {
+		"envfreeFuncsStaticCheck": {
+			"SUCCESS": [
+				"getBalance(uint256)",
+				"getRecipient(uint256)",
+				"getSender(uint256)",
+				"getSnapshotDebtScaled(uint256)",
+				"getSnapshotTime(uint256)",
+				"isVoided(uint256)"
+			]
+		},
+		"exploit_debt_overflow_manipulation": "SUCCESS",
+		"exploit_depletion_time_calculation": "TIMEOUT",
+		"exploit_deposit_front_running": "SUCCESS",
+		"exploit_pause_debt_manipulation": "FAIL",
+		"exploit_refund_steals_covered_debt": "SUCCESS",
+		"exploit_time_based_debt_manipulation": "SUCCESS",
+		"exploit_uncovered_debt_calculation": "SUCCESS"
+	}
+}

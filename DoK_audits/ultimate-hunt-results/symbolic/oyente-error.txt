@@ -1,0 +1,10 @@
+Oyente run failed (source_map JSON decode).
+Command:
+  (cd flow && SOLC_VERSION=0.8.29 oyente -s src/SablierFlow.sol -cnames SablierFlow -t 300000 -ll 10 -dl 20 -j -ce > ultimate-hunt-results/symbolic/oyente.json)
+Error (excerpt):
+  json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Notes:
+- Compilation succeeded with solc 0.8.29 and remappings, then crash inside oyente_plus source_map parsing.
+- Previous attempts without remappings failed to resolve imports.
+Action:
+- Needs rerun with a patched oyente_plus or alternative symbolic tool; consider standard-json path or different oyente build.

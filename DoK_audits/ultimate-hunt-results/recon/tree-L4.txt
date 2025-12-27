@@ -1,0 +1,506 @@
+[34m [1m.[0m
+[1;90m├──[0m [34m [1m.codex[0m
+[1;90m├──[0m [34m [1m.cursor[0m
+[1;90m│  └──[0m [34m [1mplans[0m
+[1;90m│     ├──[0m  flow-plan.plan.md
+[1;90m│     └──[0m  plan_3f6c513b.plan.md
+[1;90m├──[0m [34m [1m.vscode[0m
+[1;90m│  └──[0m  settings.json
+[1;90m├──[0m [34m [1mairdrops[0m
+[1;90m│  ├──[0m [34m [1m.audit[0m
+[1;90m│  │  └──[0m [34m [1mstatic[0m
+[1;90m│  │     ├──[0m  mythril.txt
+[1;90m│  │     ├──[0m  oyente.err
+[1;90m│  │     ├──[0m  oyente.json
+[1;90m│  │     ├──[0m  securify.txt
+[1;90m│  │     ├──[0m  slither.json
+[1;90m│  │     └──[0m  solc-settings.json
+[1;90m│  ├──[0m [34m [1m.certora_internal[0m
+[1;90m│  │  ├──[0m [34m [1m25_12_24_20_12_00_172052c21a[0m
+[1;90m│  │  │  ├──[0m  certora_debug_log.txt
+[1;90m│  │  │  └──[0m  resource_errors.json
+[1;90m│  │  ├──[0m [34m [1m25_12_24_20_12_11_004802da0d[0m
+[1;90m│  │  │  ├──[0m  certora_debug_log.txt
+[1;90m│  │  │  └──[0m  resource_errors.json
+[1;90m│  │  ├──[0m [34m [1m25_12_24_20_12_25_563511495d[0m
+[1;90m│  │  │  ├──[0m  certora_debug_log.txt
+[1;90m│  │  │  └──[0m  resource_errors.json
+[1;90m│  │  ├──[0m [34m [1m25_12_24_20_12_35_424619b876[0m
+[1;90m│  │  │  ├──[0m  certora_debug_log.txt
+[1;90m│  │  │  └──[0m  resource_errors.json
+[1;90m│  │  ├──[0m [34m [1m25_12_24_20_12_49_876498d565[0m
+[1;90m│  │  │  ├──[0m  certora_debug_log.txt
+[1;90m│  │  │  └──[0m  resource_errors.json
+[1;90m│  │  ├──[0m [34m [1m25_12_24_20_13_24_5369365edd[0m
+[1;90m│  │  │  ├──[0m [34m [1m.certora_config[0m
+[1;90m│  │  │  ├──[0m [34m [1m.certora_sources[0m
+[1;90m│  │  │  ├──[0m  .certora_metadata.json
+[1;90m│  │  │  ├──[0m  .certora_verify.json
+[1;90m│  │  │  ├──[0m  .configuration_layout.json
+[1;90m│  │  │  ├──[0m  certora_debug_log.txt
+[1;90m│  │  │  ├──[0m  resource_errors.json
+[1;90m│  │  │  └──[0m  run.conf
+[1;90m│  │  └──[0m [36m latest[0m [1;90m->[0m [1;34m25_12_24_20_13_24_5369365edd[0m
+[1;90m│  ├──[0m [34m [1m.github[0m
+[1;90m│  │  └──[0m [34m [1mworkflows[0m
+[1;90m│  │     ├──[0m  ci-deep.yml
+[1;90m│  │     ├──[0m  ci-fork.yml
+[1;90m│  │     ├──[0m  ci-multibuild.yml
+[1;90m│  │     ├──[0m  ci-slither.yml
+[1;90m│  │     ├──[0m  ci.yml
+[1;90m│  │     └──[0m  cron-stale.yml
+[1;90m│  ├──[0m [34m [1m.husky[0m
+[1;90m│  │  └──[0m  pre-commit
+[1;90m│  ├──[0m [34m [1m.vscode[0m
+[1;90m│  │  ├──[0m  extensions.json
+[1;90m│  │  └──[0m  settings.json
+[1;90m│  ├──[0m [34m [1mcertora[0m
+[1;90m│  │  ├──[0m [34m [1mconf[0m
+[1;90m│  │  │  └──[0m  airdrops.conf
+[1;90m│  │  └──[0m [34m [1mspec[0m
+[1;90m│  │     └──[0m  airdrops.spec
+[1;90m│  ├──[0m [34m [1mscripts[0m
+[1;90m│  │  ├──[0m [34m [1mbash[0m
+[1;90m│  │  │  └──[0m [32m [1mprepare-artifacts.sh[0m
+[1;90m│  │  └──[0m [34m [1msolidity[0m
+[1;90m│  │     ├──[0m  CreateMerkleInstant.s.sol
+[1;90m│  │     ├──[0m  CreateMerkleLL.s.sol
+[1;90m│  │     ├──[0m  CreateMerkleLT.s.sol
+[1;90m│  │     ├──[0m  CreateMerkleVCA.s.sol
+[1;90m│  │     ├──[0m  DeployDeterministicFactories.s.sol
+[1;90m│  │     └──[0m  DeployFactories.s.sol
+[1;90m│  ├──[0m [34m [1msrc[0m
+[1;90m│  │  ├──[0m [34m [1mabstracts[0m
+[1;90m│  │  │  ├──[0m  SablierFactoryMerkleBase.sol
+[1;90m│  │  │  ├──[0m  SablierMerkleBase.sol
+[1;90m│  │  │  └──[0m  SablierMerkleLockup.sol
+[1;90m│  │  ├──[0m [34m [1minterfaces[0m
+[1;90m│  │  │  ├──[0m  ISablierFactoryMerkleBase.sol
+[1;90m│  │  │  ├──[0m  ISablierFactoryMerkleInstant.sol
+[1;90m│  │  │  ├──[0m  ISablierFactoryMerkleLL.sol
+[1;90m│  │  │  ├──[0m  ISablierFactoryMerkleLT.sol
+[1;90m│  │  │  ├──[0m  ISablierFactoryMerkleVCA.sol
+[1;90m│  │  │  ├──[0m  ISablierMerkleBase.sol
+[1;90m│  │  │  ├──[0m  ISablierMerkleInstant.sol
+[1;90m│  │  │  ├──[0m  ISablierMerkleLL.sol
+[1;90m│  │  │  ├──[0m  ISablierMerkleLockup.sol
+[1;90m│  │  │  ├──[0m  ISablierMerkleLT.sol
+[1;90m│  │  │  └──[0m  ISablierMerkleVCA.sol
+[1;90m│  │  ├──[0m [34m [1mlibraries[0m
+[1;90m│  │  │  ├──[0m  Errors.sol
+[1;90m│  │  │  ├──[0m  Errors.sol:Errors.evm.disasm
+[1;90m│  │  │  ├──[0m  SignatureHash.sol
+[1;90m│  │  │  └──[0m  SignatureHash.sol:SignatureHash.evm.disasm
+[1;90m│  │  ├──[0m [34m [1mtypes[0m
+[1;90m│  │  │  ├──[0m  DataTypes.sol
+[1;90m│  │  │  ├──[0m  DataTypes.sol:MerkleInstant.evm.disasm
+[1;90m│  │  │  ├──[0m  DataTypes.sol:MerkleLL.evm.disasm
+[1;90m│  │  │  ├──[0m  DataTypes.sol:MerkleLT.evm.disasm
+[1;90m│  │  │  └──[0m  DataTypes.sol:MerkleVCA.evm.disasm
+[1;90m│  │  ├──[0m  SablierFactoryMerkleInstant.sol
+[1;90m│  │  ├──[0m  SablierFactoryMerkleLL.sol
+[1;90m│  │  ├──[0m  SablierFactoryMerkleLT.sol
+[1;90m│  │  ├──[0m  SablierFactoryMerkleVCA.sol
+[1;90m│  │  ├──[0m  SablierMerkleInstant.sol
+[1;90m│  │  ├──[0m  SablierMerkleLL.sol
+[1;90m│  │  ├──[0m  SablierMerkleLT.sol
+[1;90m│  │  ├──[0m  SablierMerkleLT.sol:SablierMerkleLT.evm.disasm
+[1;90m│  │  └──[0m  SablierMerkleVCA.sol
+[1;90m│  ├──[0m [34m [1mtests[0m
+[1;90m│  │  ├──[0m [34m [1mfork[0m
+[1;90m│  │  │  ├──[0m [34m [1mmerkle-campaign[0m
+[1;90m│  │  │  ├──[0m [34m [1mtokens[0m
+[1;90m│  │  │  └──[0m  Fork.t.sol
+[1;90m│  │  ├──[0m [34m [1mintegration[0m
+[1;90m│  │  │  ├──[0m [34m [1mconcrete[0m
+[1;90m│  │  │  ├──[0m [34m [1mfuzz[0m
+[1;90m│  │  │  └──[0m  Integration.t.sol
+[1;90m│  │  ├──[0m [34m [1munit[0m
+[1;90m│  │  │  └──[0m  SignatureHash.t.sol
+[1;90m│  │  ├──[0m [34m [1mutils[0m
+[1;90m│  │  │  ├──[0m  .npmignore
+[1;90m│  │  │  ├──[0m  Assertions.sol
+[1;90m│  │  │  ├──[0m  BaseScript.t.sol
+[1;90m│  │  │  ├──[0m  Constants.sol
+[1;90m│  │  │  ├──[0m  DeployOptimized.sol
+[1;90m│  │  │  ├──[0m  Fuzzers.sol
+[1;90m│  │  │  ├──[0m  MerkleBuilder.sol
+[1;90m│  │  │  ├──[0m  MerkleBuilder.t.sol
+[1;90m│  │  │  ├──[0m  Modifiers.sol
+[1;90m│  │  │  ├──[0m  Types.sol
+[1;90m│  │  │  └──[0m  Utilities.sol
+[1;90m│  │  ├──[0m  .solhint.json
+[1;90m│  │  └──[0m  Base.t.sol
+[1;90m│  ├──[0m  .editorconfig
+[1;90m│  ├──[0m  .env
+[1;90m│  ├──[0m  .env.example
+[1;90m│  ├──[0m  .gitignore
+[1;90m│  ├──[0m [33m [1m.lintstagedrc.js[0m
+[1;90m│  ├──[0m  .prettierignore
+[1;90m│  ├──[0m [33m [1m.prettierrc.js[0m
+[1;90m│  ├──[0m  .solhint.json
+[1;90m│  ├──[0m  bun.lock
+[1;90m│  ├──[0m  CHANGELOG.md
+[1;90m│  ├──[0m  codecov.yml
+[1;90m│  ├──[0m  CONTRIBUTING.md
+[1;90m│  ├──[0m  foundry.toml
+[1;90m│  ├──[0m  funding.json
+[1;90m│  ├──[0m [33m [1;4mjustfile[0m
+[1;90m│  ├──[0m  LICENSE-BUSL.md
+[1;90m│  ├──[0m  LICENSE-GPL.md
+[1;90m│  ├──[0m  LICENSE.md
+[1;90m│  ├──[0m [33m [1;4mpackage.json[0m
+[1;90m│  ├──[0m [33m [1;4mREADME.md[0m
+[1;90m│  ├──[0m  repomix.config.jsonc
+[1;90m│  ├──[0m  scope-guide-CANTINA.md
+[1;90m│  ├──[0m  SECURITY.md
+[1;90m│  └──[0m  slither.config.json
+[1;90m├──[0m [34m [1maudits[0m
+[1;90m│  ├──[0m [34m [1mairdrops[0m
+[1;90m│  │  ├──[0m [34m [1mv1.3[0m
+[1;90m│  │  │  └──[0m [32m 20250112_cantina.pdf[0m
+[1;90m│  │  └──[0m [34m [1mv2.0[0m
+[1;90m│  │     ├──[0m [32m 20250405_cantina.pdf[0m
+[1;90m│  │     └──[0m [32m 20250728_cantina.pdf[0m
+[1;90m│  ├──[0m [34m [1mevm-utils[0m
+[1;90m│  │  └──[0m [34m [1mv1.0[0m
+[1;90m│  │     └──[0m [32m 20250728_cantina.pdf[0m
+[1;90m│  ├──[0m [34m [1mflow[0m
+[1;90m│  │  ├──[0m [34m [1mv1.0[0m
+[1;90m│  │  │  ├──[0m [32m 20241020_cantina.pdf[0m
+[1;90m│  │  │  └──[0m  20241113_codehawk.md
+[1;90m│  │  ├──[0m [34m [1mv1.1[0m
+[1;90m│  │  │  └──[0m [32m 20250112_cantina.pdf[0m
+[1;90m│  │  └──[0m [34m [1mv2.0[0m
+[1;90m│  │     ├──[0m [32m 20250405_cantina.pdf[0m
+[1;90m│  │     └──[0m [32m 20250728_cantina.pdf[0m
+[1;90m│  ├──[0m [34m [1mlegacy[0m
+[1;90m│  │  └──[0m [32m 20191125_quantstamp.pdf[0m
+[1;90m│  ├──[0m [34m [1mlockup[0m
+[1;90m│  │  ├──[0m [34m [1mv1.0[0m
+[1;90m│  │  │  ├──[0m [32m 20230331_hake.pdf[0m
+[1;90m│  │  │  ├──[0m [32m 20230403_hydn.pdf[0m
+[1;90m│  │  │  ├──[0m [32m 20230404_iaro_core.pdf[0m
+[1;90m│  │  │  ├──[0m [32m 20230424_rahul.pdf[0m
+[1;90m│  │  │  ├──[0m [32m 20230608_cantina.pdf[0m
+[1;90m│  │  │  ├──[0m [32m 20230613_iaro_core.pdf[0m
+[1;90m│  │  │  └──[0m [32m 20230709_iaro_periphery.pdf[0m
+[1;90m│  │  ├──[0m [34m [1mv1.1[0m
+[1;90m│  │  │  ├──[0m [32m 20230906_cantina.pdf[0m
+[1;90m│  │  │  ├──[0m [32m 20231130_turing.pdf[0m
+[1;90m│  │  │  ├──[0m [32m 20231215_cantina.pdf[0m
+[1;90m│  │  │  └──[0m [32m 20231221_cantina.pdf[0m
+[1;90m│  │  ├──[0m [34m [1mv1.2[0m
+[1;90m│  │  │  ├──[0m [32m 20240613_cantina.pdf[0m
+[1;90m│  │  │  ├──[0m  20240615_codehawk.md
+[1;90m│  │  │  ├──[0m [32m 20240628_egis.pdf[0m
+[1;90m│  │  │  └──[0m [32m 20240703_cantina.pdf[0m
+[1;90m│  │  ├──[0m [34m [1mv2.0[0m
+[1;90m│  │  │  └──[0m [32m 20250112_cantina.pdf[0m
+[1;90m│  │  └──[0m [34m [1mv3.0[0m
+[1;90m│  │     ├──[0m [32m 20250405_cantina.pdf[0m
+[1;90m│  │     └──[0m [32m 20250728_cantina.pdf[0m
+[1;90m│  ├──[0m [34m [1msolsab[0m
+[1;90m│  │  └──[0m [34m [1mv1.0[0m
+[1;90m│  │     └──[0m [32m 20250825_cantina.pdf[0m
+[1;90m│  ├──[0m [34m [1mstaking[0m
+[1;90m│  │  └──[0m [34m [1mv1.0[0m
+[1;90m│  │     ├──[0m [32m 20250929_chaindefenders.pdf[0m
+[1;90m│  │     └──[0m [32m 20251014_cantina.pdf[0m
+[1;90m│  ├──[0m  .gitignore
+[1;90m│  ├──[0m  .prettierrc.yml
+[1;90m│  ├──[0m [33m [1;4mREADME.md[0m
+[1;90m│  └──[0m  scope-guide-CANTINA.md
+[1;90m├──[0m [34m [1mflow[0m
+[1;90m│  ├──[0m [34m [1m.audit[0m
+[1;90m│  │  └──[0m [34m [1mstatic[0m
+[1;90m│  │     ├──[0m  mythril.txt
+[1;90m│  │     ├──[0m  oyente.err
+[1;90m│  │     ├──[0m  oyente.json
+[1;90m│  │     ├──[0m  securify.txt
+[1;90m│  │     ├──[0m  slither.json
+[1;90m│  │     └──[0m  solc-settings.json
+[1;90m│  ├──[0m [34m [1m.github[0m
+[1;90m│  │  └──[0m [34m [1mworkflows[0m
+[1;90m│  │     ├──[0m  ci-deep.yml
+[1;90m│  │     ├──[0m  ci-fork.yml
+[1;90m│  │     ├──[0m  ci-multibuild.yml
+[1;90m│  │     ├──[0m  ci.yml
+[1;90m│  │     └──[0m  cron-stale.yml
+[1;90m│  ├──[0m [34m [1m.husky[0m
+[1;90m│  │  └──[0m  pre-commit
+[1;90m│  ├──[0m [34m [1m.vscode[0m
+[1;90m│  │  ├──[0m  extensions.json
+[1;90m│  │  └──[0m  settings.json
+[1;90m│  ├──[0m [34m [1mcertora[0m
+[1;90m│  │  ├──[0m [34m [1mconf[0m
+[1;90m│  │  │  └──[0m  flow.conf
+[1;90m│  │  └──[0m [34m [1mspec[0m
+[1;90m│  │     └──[0m  flow.spec
+[1;90m│  ├──[0m [34m [1mscripts[0m
+[1;90m│  │  ├──[0m [34m [1mbash[0m
+[1;90m│  │  │  └──[0m [32m [1mprepare-artifacts.sh[0m
+[1;90m│  │  ├──[0m [34m [1msolidity[0m
+[1;90m│  │  │  ├──[0m  DeployDeterministicFlow.s.sol
+[1;90m│  │  │  ├──[0m  DeployDeterministicFlowNFTDescriptor.s.sol
+[1;90m│  │  │  ├──[0m  DeployDeterministicProtocol.s.sol
+[1;90m│  │  │  ├──[0m  DeployFlow.s.sol
+[1;90m│  │  │  ├──[0m  DeployFlowNFTDescriptor.s.sol
+[1;90m│  │  │  ├──[0m  DeployProtocol.s.sol
+[1;90m│  │  │  └──[0m  NFTDescriptorAddresses.sol
+[1;90m│  │  └──[0m  Init.s.sol
+[1;90m│  ├──[0m [34m [1msrc[0m
+[1;90m│  │  ├──[0m [34m [1mabstracts[0m
+[1;90m│  │  │  └──[0m  SablierFlowState.sol
+[1;90m│  │  ├──[0m [34m [1minterfaces[0m
+[1;90m│  │  │  ├──[0m  IFlowNFTDescriptor.sol
+[1;90m│  │  │  ├──[0m  ISablierFlow.sol
+[1;90m│  │  │  └──[0m  ISablierFlowState.sol
+[1;90m│  │  ├──[0m [34m [1mlibraries[0m
+[1;90m│  │  │  ├──[0m  Errors.sol
+[1;90m│  │  │  ├──[0m  Errors.sol:Errors.evm.disasm
+[1;90m│  │  │  ├──[0m  Helpers.sol
+[1;90m│  │  │  └──[0m  Helpers.sol:Helpers.evm.disasm
+[1;90m│  │  ├──[0m [34m [1mtypes[0m
+[1;90m│  │  │  ├──[0m  DataTypes.sol
+[1;90m│  │  │  └──[0m  DataTypes.sol:Flow.evm.disasm
+[1;90m│  │  ├──[0m  FlowNFTDescriptor.sol
+[1;90m│  │  ├──[0m  SablierFlow.sol
+[1;90m│  │  └──[0m  SablierFlow.sol:SablierFlow.evm.disasm
+[1;90m│  ├──[0m [34m [1mtests[0m
+[1;90m│  │  ├──[0m [34m [1mfork[0m
+[1;90m│  │  │  ├──[0m [34m [1mtokens[0m
+[1;90m│  │  │  ├──[0m  Flow.t.sol
+[1;90m│  │  │  └──[0m  Fork.t.sol
+[1;90m│  │  ├──[0m [34m [1mintegration[0m
+[1;90m│  │  │  ├──[0m [34m [1mconcrete[0m
+[1;90m│  │  │  ├──[0m [34m [1mfuzz[0m
+[1;90m│  │  │  └──[0m  Integration.t.sol
+[1;90m│  │  ├──[0m [34m [1minvariant[0m
+[1;90m│  │  │  ├──[0m [34m [1mhandlers[0m
+[1;90m│  │  │  ├──[0m [34m [1mstores[0m
+[1;90m│  │  │  ├──[0m  Invariant.t.sol
+[1;90m│  │  │  └──[0m [33m [1;4mREADME.md[0m
+[1;90m│  │  ├──[0m [34m [1mutils[0m
+[1;90m│  │  │  ├──[0m  .npmignore
+[1;90m│  │  │  ├──[0m  Assertions.sol
+[1;90m│  │  │  ├──[0m  BaseScript.t.sol
+[1;90m│  │  │  ├──[0m  Constants.sol
+[1;90m│  │  │  ├──[0m  Modifiers.sol
+[1;90m│  │  │  ├──[0m  Types.sol
+[1;90m│  │  │  ├──[0m  Utils.sol
+[1;90m│  │  │  └──[0m  Vars.sol
+[1;90m│  │  ├──[0m  .solhint.json
+[1;90m│  │  └──[0m  Base.t.sol
+[1;90m│  ├──[0m [34m [1multimate-hunt-results[0m
+[1;90m│  │  ├──[0m [34m [1mcertora[0m
+[1;90m│  │  ├──[0m [34m [1mfuzz[0m
+[1;90m│  │  ├──[0m [34m [1mpocs[0m
+[1;90m│  │  ├──[0m [34m [1mrecon[0m
+[1;90m│  │  │  └──[0m  tree-L4.txt
+[1;90m│  │  ├──[0m [34m [1mreport[0m
+[1;90m│  │  ├──[0m [34m [1mstatic[0m
+[1;90m│  │  └──[0m [34m [1msymbolic[0m
+[1;90m│  ├──[0m  .editorconfig
+[1;90m│  ├──[0m  .env
+[1;90m│  ├──[0m  .env.example
+[1;90m│  ├──[0m  .gitignore
+[1;90m│  ├──[0m [33m [1m.lintstagedrc.js[0m
+[1;90m│  ├──[0m  .prettierignore
+[1;90m│  ├──[0m [33m [1m.prettierrc.js[0m
+[1;90m│  ├──[0m  .solhint.json
+[1;90m│  ├──[0m  bun.lock
+[1;90m│  ├──[0m  CHANGELOG.md
+[1;90m│  ├──[0m  codecov.yml
+[1;90m│  ├──[0m  CONTRIBUTING.md
+[1;90m│  ├──[0m  foundry.toml
+[1;90m│  ├──[0m  funding.json
+[1;90m│  ├──[0m [33m [1;4mjustfile[0m
+[1;90m│  ├──[0m  LICENSE-BUSL.md
+[1;90m│  ├──[0m  LICENSE-GPL.md
+[1;90m│  ├──[0m  LICENSE.md
+[1;90m│  ├──[0m [33m [1;4mpackage.json[0m
+[1;90m│  ├──[0m [33m [1;4mREADME.md[0m
+[1;90m│  ├──[0m  repomix.config.jsonc
+[1;90m│  ├──[0m  scope-guide-CANTINA.md
+[1;90m│  ├──[0m  SECURITY.md
+[1;90m│  └──[0m  slither.config.json
+[1;90m├──[0m [34m [1mlockup[0m
+[1;90m│  ├──[0m [34m [1m.audit[0m
+[1;90m│  │  └──[0m [34m [1mstatic[0m
+[1;90m│  │     ├──[0m  mythril.txt
+[1;90m│  │     ├──[0m  oyente.err
+[1;90m│  │     ├──[0m  oyente.json
+[1;90m│  │     ├──[0m  securify.txt
+[1;90m│  │     ├──[0m  slither.json
+[1;90m│  │     └──[0m  solc-settings.json
+[1;90m│  ├──[0m [34m [1m.github[0m
+[1;90m│  │  └──[0m [34m [1mworkflows[0m
+[1;90m│  │     ├──[0m  ci-deep.yml
+[1;90m│  │     ├──[0m  ci-fork.yml
+[1;90m│  │     ├──[0m  ci-multibuild.yml
+[1;90m│  │     ├──[0m  ci-slither.yml
+[1;90m│  │     ├──[0m  ci.yml
+[1;90m│  │     ├──[0m  claude.yml
+[1;90m│  │     └──[0m  cron-stale.yml
+[1;90m│  ├──[0m [34m [1m.husky[0m
+[1;90m│  │  └──[0m [32m [1mpre-commit[0m
+[1;90m│  ├──[0m [34m [1m.vscode[0m
+[1;90m│  │  ├──[0m  extensions.json
+[1;90m│  │  └──[0m  settings.json
+[1;90m│  ├──[0m [34m [1mcertora[0m
+[1;90m│  │  ├──[0m [34m [1mconf[0m
+[1;90m│  │  │  └──[0m  lockup.conf
+[1;90m│  │  └──[0m [34m [1mspec[0m
+[1;90m│  │     └──[0m  lockup.spec
+[1;90m│  ├──[0m [34m [1mscripts[0m
+[1;90m│  │  ├──[0m [34m [1mbash[0m
+[1;90m│  │  │  ├──[0m [32m [1mgenerate-svg-panoply.sh[0m
+[1;90m│  │  │  ├──[0m [32m [1mgenerate-svg.sh[0m
+[1;90m│  │  │  └──[0m [32m [1mprepare-artifacts.sh[0m
+[1;90m│  │  └──[0m [34m [1msolidity[0m
+[1;90m│  │     ├──[0m  DeployBatchLockup.s.sol
+[1;90m│  │     ├──[0m  DeployDeterministicBatchLockup.s.sol
+[1;90m│  │     ├──[0m  DeployDeterministicLockup.s.sol
+[1;90m│  │     ├──[0m  DeployDeterministicLockupNFTDescriptor.s.sol
+[1;90m│  │     ├──[0m  DeployDeterministicProtocol.s.sol
+[1;90m│  │     ├──[0m  DeployLockup.s.sol
+[1;90m│  │     ├──[0m  DeployLockupNFTDescriptor.s.sol
+[1;90m│  │     ├──[0m  DeployProtocol.s.sol
+[1;90m│  │     ├──[0m  GenerateSVG.s.sol
+[1;90m│  │     ├──[0m  Init.s.sol
+[1;90m│  │     └──[0m  LockupNFTDescriptorAddresses.sol
+[1;90m│  ├──[0m [34m [1msrc[0m
+[1;90m│  │  ├──[0m [34m [1mabstracts[0m
+[1;90m│  │  │  ├──[0m  SablierLockupDynamic.sol
+[1;90m│  │  │  ├──[0m  SablierLockupLinear.sol
+[1;90m│  │  │  ├──[0m  SablierLockupState.sol
+[1;90m│  │  │  └──[0m  SablierLockupTranched.sol
+[1;90m│  │  ├──[0m [34m [1minterfaces[0m
+[1;90m│  │  │  ├──[0m  ILockupNFTDescriptor.sol
+[1;90m│  │  │  ├──[0m  ISablierBatchLockup.sol
+[1;90m│  │  │  ├──[0m  ISablierLockup.sol
+[1;90m│  │  │  ├──[0m  ISablierLockupDynamic.sol
+[1;90m│  │  │  ├──[0m  ISablierLockupLinear.sol
+[1;90m│  │  │  ├──[0m  ISablierLockupRecipient.sol
+[1;90m│  │  │  ├──[0m  ISablierLockupState.sol
+[1;90m│  │  │  └──[0m  ISablierLockupTranched.sol
+[1;90m│  │  ├──[0m [34m [1mlibraries[0m
+[1;90m│  │  │  ├──[0m  Errors.sol
+[1;90m│  │  │  ├──[0m  Errors.sol:Errors.evm.disasm
+[1;90m│  │  │  ├──[0m  Helpers.sol
+[1;90m│  │  │  ├──[0m  Helpers.sol:Helpers.evm.disasm
+[1;90m│  │  │  ├──[0m  LockupMath.sol
+[1;90m│  │  │  ├──[0m  LockupMath.sol:LockupMath.evm.disasm
+[1;90m│  │  │  ├──[0m  NFTSVG.sol
+[1;90m│  │  │  └──[0m  SVGElements.sol
+[1;90m│  │  ├──[0m [34m [1mtypes[0m
+[1;90m│  │  │  ├──[0m  BatchLockup.sol
+[1;90m│  │  │  ├──[0m  DataTypes.sol
+[1;90m│  │  │  ├──[0m  Lockup.sol
+[1;90m│  │  │  ├──[0m  Lockup.sol:Lockup.evm.disasm
+[1;90m│  │  │  ├──[0m  LockupDynamic.sol
+[1;90m│  │  │  ├──[0m  LockupDynamic.sol:LockupDynamic.evm.disasm
+[1;90m│  │  │  ├──[0m  LockupLinear.sol
+[1;90m│  │  │  ├──[0m  LockupLinear.sol:LockupLinear.evm.disasm
+[1;90m│  │  │  ├──[0m  LockupTranched.sol
+[1;90m│  │  │  └──[0m  LockupTranched.sol:LockupTranched.evm.disasm
+[1;90m│  │  ├──[0m  LockupNFTDescriptor.sol
+[1;90m│  │  ├──[0m  SablierBatchLockup.sol
+[1;90m│  │  ├──[0m  SablierLockup.sol
+[1;90m│  │  └──[0m  SablierLockup.sol:SablierLockup.evm.disasm
+[1;90m│  ├──[0m [34m [1mtests[0m
+[1;90m│  │  ├──[0m [34m [1mfork[0m
+[1;90m│  │  │  ├──[0m [34m [1mtokens[0m
+[1;90m│  │  │  ├──[0m  Fork.t.sol
+[1;90m│  │  │  ├──[0m  Lockup.t.sol
+[1;90m│  │  │  ├──[0m  LockupDynamic.t.sol
+[1;90m│  │  │  ├──[0m  LockupLinear.t.sol
+[1;90m│  │  │  └──[0m  LockupTranched.t.sol
+[1;90m│  │  ├──[0m [34m [1mintegration[0m
+[1;90m│  │  │  ├──[0m [34m [1mconcrete[0m
+[1;90m│  │  │  ├──[0m [34m [1mfuzz[0m
+[1;90m│  │  │  └──[0m  Integration.t.sol
+[1;90m│  │  ├──[0m [34m [1minvariant[0m
+[1;90m│  │  │  ├──[0m [34m [1mhandlers[0m
+[1;90m│  │  │  ├──[0m [34m [1mstores[0m
+[1;90m│  │  │  ├──[0m  Invariant.t.sol
+[1;90m│  │  │  └──[0m [33m [1;4mREADME.md[0m
+[1;90m│  │  ├──[0m [34m [1mmocks[0m
+[1;90m│  │  │  ├──[0m  Hooks.sol
+[1;90m│  │  │  ├──[0m  NFTDescriptorMock.sol
+[1;90m│  │  │  └──[0m  Noop.sol
+[1;90m│  │  ├──[0m [34m [1munit[0m
+[1;90m│  │  │  └──[0m [34m [1mconcrete[0m
+[1;90m│  │  ├──[0m [34m [1mutils[0m
+[1;90m│  │  │  ├──[0m  .npmignore
+[1;90m│  │  │  ├──[0m  ArrayBuilder.sol
+[1;90m│  │  │  ├──[0m  Assertions.sol
+[1;90m│  │  │  ├──[0m  BaseScript.t.sol
+[1;90m│  │  │  ├──[0m  BatchLockupBuilder.sol
+[1;90m│  │  │  ├──[0m  Calculations.sol
+[1;90m│  │  │  ├──[0m  Constants.sol
+[1;90m│  │  │  ├──[0m  Defaults.sol
+[1;90m│  │  │  ├──[0m  DeployOptimized.t.sol
+[1;90m│  │  │  ├──[0m  EstimateMaxCount.sol
+[1;90m│  │  │  ├──[0m  Fuzzers.sol
+[1;90m│  │  │  ├──[0m  Modifiers.sol
+[1;90m│  │  │  ├──[0m  Types.sol
+[1;90m│  │  │  └──[0m  Utils.sol
+[1;90m│  │  ├──[0m  .solhint.json
+[1;90m│  │  └──[0m  Base.t.sol
+[1;90m│  ├──[0m  .editorconfig
+[1;90m│  ├──[0m  .env
+[1;90m│  ├──[0m  .env.example
+[1;90m│  ├──[0m  .gitignore
+[1;90m│  ├──[0m [33m [1m.lintstagedrc.js[0m
+[1;90m│  ├──[0m  .prettierignore
+[1;90m│  ├──[0m [33m [1m.prettierrc.js[0m
+[1;90m│  ├──[0m  .solhint.json
+[1;90m│  ├──[0m  bun.lock
+[1;90m│  ├──[0m  CHANGELOG.md
+[1;90m│  ├──[0m  codecov.yml
+[1;90m│  ├──[0m  CONTRIBUTING.md
+[1;90m│  ├──[0m  foundry.toml
+[1;90m│  ├──[0m  funding.json
+[1;90m│  ├──[0m [33m [1;4mjustfile[0m
+[1;90m│  ├──[0m  LICENSE-BUSL.md
+[1;90m│  ├──[0m  LICENSE-GPL.md
+[1;90m│  ├──[0m  LICENSE.md
+[1;90m│  ├──[0m [33m [1;4mpackage.json[0m
+[1;90m│  ├──[0m [33m [1;4mREADME.md[0m
+[1;90m│  ├──[0m  repomix.config.jsonc
+[1;90m│  ├──[0m  scope-guide-CANTINA.md
+[1;90m│  ├──[0m  SECURITY.md
+[1;90m│  └──[0m  slither.config.json
+[1;90m├──[0m [34m [1mtools[0m
+[1;90m│  ├──[0m [36m certora[0m [1;90m->[0m [36m/home/dok/tools/[1;34mCertoraProver-web3-v2.5-professional[0m
+[1;90m│  ├──[0m [36m ffuf[0m [1;90m->[0m [36m/home/dok/tools/[1;34mffuf[0m
+[1;90m│  ├──[0m [36m gambit[0m [1;90m->[0m [36m/home/dok/tools/[1;34mgambit-web3-enhanced-v2[0m
+[1;90m│  ├──[0m [36m hevm[0m [1;90m->[0m [36m/home/dok/tools/[1;34mhevm[0m
+[1;90m│  ├──[0m [36m oyente_plus[0m [1;90m->[0m [36m/home/dok/tools/[1;34moyente_plus[0m
+[1;90m│  ├──[0m [36m solc-select[0m [1;90m->[0m [36m/home/dok/tools/[1;34msolc-select[0m
+[1;90m│  ├──[0m [34m [1mw3-audit[0m
+[1;90m│  │  ├──[0m [36m echidna[0m [1;90m->[0m [36m/home/dok/tools/w3-audit/[1;34mechidna[0m
+[1;90m│  │  ├──[0m [36m fuzz-utils[0m [1;90m->[0m [36m/home/dok/tools/w3-audit/[1;34mfuzz-utils[0m
+[1;90m│  │  ├──[0m [36m medusa[0m [1;90m->[0m [36m/home/dok/tools/w3-audit/[1;34mmedusa[0m
+[1;90m│  │  ├──[0m [36m mythril2.0[0m [1;90m->[0m [36m/home/dok/tools/w3-audit/[1;34mmythril2.0[0m
+[1;90m│  │  ├──[0m [36m slitheryn2[0m [1;90m->[0m [36m/home/dok/tools/w3-audit/[1;34mslitheryn2[0m
+[1;90m│  │  └──[0m [36m web3se-lab[0m [1;90m->[0m [36m/home/dok/tools/w3-audit/[1;34mweb3se-lab[0m
+[1;90m│  └──[0m [34m [1mwwjd[0m
+[1;90m│     ├──[0m [36m 4naly3er2.0[0m [1;90m->[0m [36m/home/dok/tools/wwjd/[1;34m4naly3er2.0[0m
+[1;90m│     ├──[0m [36m aderyn2.0[0m [1;90m->[0m [36m/home/dok/tools/wwjd/[1;34maderyn2.0[0m
+[1;90m│     ├──[0m [36m ffuf-2.0[0m [1;90m->[0m [36m/home/dok/tools/wwjd/[1;34mffuf-2.0[0m
+[1;90m│     ├──[0m [36m finite-monkey-engine[0m [1;90m->[0m [36m/home/dok/tools/wwjd/[1;34mfinite-monkey-engine[0m
+[1;90m│     ├──[0m [36m ityfuzz[0m [1;90m->[0m [36m/home/dok/tools/wwjd/[1;34mityfuzz[0m
+[1;90m│     ├──[0m [36m mush-audit[0m [1;90m->[0m [36m/home/dok/tools/wwjd/[1;34mmush-audit[0m
+[1;90m│     ├──[0m [36m ragie-python[0m [1;90m->[0m [36m/home/dok/tools/wwjd/[1;34mragie-python[0m
+[1;90m│     ├──[0m [36m ragie-typescript[0m [1;90m->[0m [36m/home/dok/tools/wwjd/[1;34mragie-typescript[0m
+[1;90m│     ├──[0m [36m securify2.5[0m [1;90m->[0m [36m/home/dok/tools/wwjd/[1;34msecurify2.5[0m
+[1;90m│     ├──[0m [36m vibehacker_metasploit_mcp[0m [1;90m->[0m [36m/home/dok/tools/wwjd/[1;34mvibehacker_metasploit_mcp[0m
+[1;90m│     └──[0m [36m ragie-script[0m [31m->[0m [4;31m/home/dok/tools/wwjd/ragie-script[0m
+[1;90m├──[0m  .env
+[1;90m├──[0m  audit-config.json
+[1;90m├──[0m [32m [1mbuild-all.sh[0m
+[1;90m├──[0m  scope-guide-CANTINA.md
+[1;90m└──[0m  Submission_Template_Cantina.md

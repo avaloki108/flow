@@ -1,0 +1,1 @@
+java -jar $CERTORA/emv.jar -b 3 -multiAssertCheck -assumeUnwindCond -ruleSanityChecks basic -t 1200 -depth 10 -mediumTimeout 60 -depth 15 -smt_groundQuantifiers false -buildDirectory .certora_internal/25_12_26_16_23_25_6183373eb3

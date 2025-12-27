@@ -1,0 +1,13 @@
+{
+    "topics": [
+        {
+            "name": "type_check",
+            "messages": [
+                {
+                    "message": "Error in spec file (flow.spec:15:14): Syntax error: unexpected token near `void`",
+                    "location": []
+                }
+            ]
+        }
+    ]
+}

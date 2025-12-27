@@ -1,0 +1,8 @@
+{
+    "importFilesToOrigRelpaths": {},
+    "primary_contract": "SablierFlow",
+    "specfile": "certora/spec/flow.spec",
+    "specfileOrigRelpath": "certora/spec/flow.spec",
+    "specfilesToImportDecls": {},
+    "type": "spec"
+}

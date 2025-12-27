@@ -20,5 +20,6 @@
   },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
-  }
+  },
+  "wake.compiler.solc.remappings": []
 }

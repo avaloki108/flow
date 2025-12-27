@@ -1,0 +1,598 @@
+Reports in /home/dok/web3/sabier/flow/emv-1-certora-26-Dec--22-04/Reports
+Start Fri Dec 26 22:04:54 UTC 2025
+[ForkJoinPool-1-worker-1] WARN ALWAYS - The type `ISablierComptroller.ProtocolFees` will not be accessible in CVL code
+Reason(s):
+	struct field `customFeesUSD` cannot be expressed in CVL: [mapping types are not supported]
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:6:5: Method declaration for SablierFlow.totalDebtOf(uint256) returns (uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:7:5: Method declaration for SablierFlow.coveredDebtOf(uint256) returns (uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:8:5: Method declaration for SablierFlow.uncoveredDebtOf(uint256) returns (uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:9:5: Method declaration for SablierFlow.refundableAmountOf(uint256) returns (uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:10:5: Method declaration for SablierFlow.ongoingDebtScaledOf(uint256) returns (uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:11:5: Method declaration for SablierFlow.depletionTimeOf(uint256) returns (uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:21:5: Method declaration for SablierFlow.deposit(uint256, uint128, address, address) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:22:5: Method declaration for SablierFlow.depositAndPause(uint256, uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:23:5: Method declaration for SablierFlow.withdraw(uint256, address, uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:24:5: Method declaration for SablierFlow.withdrawMax(uint256, address) returns (uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:25:5: Method declaration for SablierFlow.refund(uint256, uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:26:5: Method declaration for SablierFlow.refundMax(uint256) returns (uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:27:5: Method declaration for SablierFlow.refundAndPause(uint256, uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:28:5: Method declaration for SablierFlow.pause(uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+The scene contains 1 contracts:
+SablierFlow : 0xce4604a0000000000000000000000025
+Running initial transformations
+[ForkJoinPool-1-worker-21] WARN INLINER - at LTACCmd(ptr=CmdPointer(block=2288_1014_0_0_0_0, pos=16), cmd=ByteLongCopy R135:bv256 0x0 R134:bv256 tacM:bytemap@186 tacTmp!mcopy9062!9063:bytemap (1534:50174:0:0xce4604a0000000000000000000000025) // SablierFlow.sol), have non-strong copy output
+[ForkJoinPool-1-worker-20] WARN INLINER - At mcopy src LTACCmd(ptr=CmdPointer(block=18808_1015_0_0_0_0, pos=1), cmd=ByteLongCopy 0x0 R222:bv256 R221:bv256 tacTmp!mcopy6016!6017:bytemap tacM:bytemap@170 (1534:50174:0:0xce4604a0000000000000000000000025) // SablierFlow.sol) in SablierFlow-tokenURI(uint256), failed to project from IndexedNode(node=ArrayElement(v=Explicit(alloc=AbstractLocation(prevFPWriteIdx=0, nextFPWriteCmd=CmdPointer(block=5970_1017_0_0_0_0, pos=0), sort=DynamicBlock(eSz=1, lengthSym=(CmdPointer(block=19167_1020_0_0_0_0, pos=10), R177:bv256)))), elemSize=1), index=IntValue(lb=0, ub=115792089237316195423570985008687907853269984665640564039457584007913129639935), elementSize=1)
+Has CVL checks.
+Checking CVL certora/specs/CriticalExploits.spec for contract SablierFlow
+Unrolling loops 3 times, unwinding condition is assumed
+Checking rule exploit_time_based_debt_manipulation (6 out of 8)...
+Checking rule exploit_uncovered_debt_calculation (4 out of 8)...
+Checking rule exploit_depletion_time_calculation (7 out of 8)...
+Checking rule exploit_refund_steals_covered_debt (2 out of 8)...
+Checking rule exploit_deposit_front_running (5 out of 8)...
+Checking rule envfreeFuncsStaticCheck (8 out of 8)...
+Checking rule exploit_pause_debt_manipulation (3 out of 8)...
+Checking rule exploit_debt_overflow_manipulation (1 out of 8)...
+Result for envfreeFuncsStaticCheck: envfreeFuncsStaticCheck: getSnapshotDebtScaled(uint256): SUCCESS
+getSender(uint256): SUCCESS
+getBalance(uint256): SUCCESS
+getSnapshotTime(uint256): SUCCESS
+isVoided(uint256): SUCCESS
+getRecipient(uint256): SUCCESS
+Starting to run on rule exploit_time_based_debt_manipulation-Assert_CRITICAL_EXPLOIT__Debt_decreased_over_time__overflow_detected_(CriticalExploits_spec_223_5)
+Starting to run on rule exploit_time_based_debt_manipulation-CheckAutoGeneratedAsserts
+Starting to run on rule exploit_depletion_time_calculation-Assert_CRITICAL_EXPLOIT__Depletion_time_calculation_allows_overdraft_(CriticalExploits_spec_251_9)
+Starting to run on rule exploit_depletion_time_calculation-Assert_true_(CriticalExploits_spec_253_5)
+Starting to run on rule exploit_depletion_time_calculation-CheckAutoGeneratedAsserts
+Starting to run on rule exploit_uncovered_debt_calculation-Assert_CRITICAL_EXPLOIT__Debt_accounting_mismatch__manipulation_possible_(CriticalExploits_spec_157_5)
+Starting to run on rule exploit_uncovered_debt_calculation-Assert_CRITICAL_EXPLOIT__Covered_debt_exceeds_balance__insolvency_(CriticalExploits_spec_160_5)
+Starting to run on rule exploit_uncovered_debt_calculation-Assert_CRITICAL_EXPLOIT__Uncovered_debt_exists_but_balance_covers_total_debt_(CriticalExploits_spec_163_5)
+Starting to run on rule exploit_uncovered_debt_calculation-CheckAutoGeneratedAsserts
+Starting to run on rule exploit_pause_debt_manipulation-Assert_CRITICAL_EXPLOIT__Pause_decreased_total_debt__manipulation_(CriticalExploits_spec_138_5)
+Starting to run on rule exploit_pause_debt_manipulation-CheckAutoGeneratedAsserts
+Starting to run on rule exploit_refund_steals_covered_debt-Assert_CRITICAL_EXPLOIT__Refund_stole_covered_debt_from_recipient_(CriticalExploits_spec_111_9)
+Starting to run on rule exploit_debt_overflow_manipulation-Assert_CRITICAL_EXPLOIT__Withdrew_more_than_balance__overflow_detected_(CriticalExploits_spec_75_9)
+Starting to run on rule exploit_refund_steals_covered_debt-Assert_CRITICAL_EXPLOIT__Refund_extracted_more_than_excess_balance_(CriticalExploits_spec_114_9)
+Starting to run on rule exploit_debt_overflow_manipulation-Assert_CRITICAL_EXPLOIT__Balance_accounting_broken__overflow_detected_(CriticalExploits_spec_77_9)
+Starting to run on rule exploit_deposit_front_running-Assert_CRITICAL_EXPLOIT__Deposit_did_not_increase_balance__frontrun_attack_(CriticalExploits_spec_201_5)
+Starting to run on rule exploit_deposit_front_running-CheckAutoGeneratedAsserts
+Starting to run on rule exploit_debt_overflow_manipulation-Assert_true_(CriticalExploits_spec_79_5)
+Starting to run on rule exploit_debt_overflow_manipulation-CheckAutoGeneratedAsserts
+Starting to run on rule exploit_refund_steals_covered_debt-Assert_true_(CriticalExploits_spec_116_5)
+Starting to run on rule exploit_refund_steals_covered_debt-CheckAutoGeneratedAsserts
+[ForkJoinPool-1-worker-22] WARN UI - Rewritten return edges should converge to a single edge from 3_0_0_102_0_1290 but got [< 3_0_0_102_0_1290 --> 31057_1009_0_101_0_1299 >, < 3_0_0_102_0_1290 --> 30980_1009_0_101_0_1295 >, < 3_0_0_102_0_1290 --> 31042_1009_0_101_0_1297 >] - trying anyway
+[ForkJoinPool-1-worker-22] WARN UI - Rewritten return edges should converge to a single edge from 22713_1012_0_104_0_1301 but got [< 22713_1012_0_104_0_1301 --> 36677_1016_0_101_0_1303 >, < 22713_1012_0_104_0_1301 --> 36728_1016_0_101_0_1305 >] - trying anyway
+[ForkJoinPool-1-worker-22] WARN UI - Rewritten return edges should converge to a single edge from 5_0_0_107_0_1309 but got [< 5_0_0_107_0_1309 --> 31057_1009_0_106_0_1318 >, < 5_0_0_107_0_1309 --> 30980_1009_0_106_0_1314 >, < 5_0_0_107_0_1309 --> 31042_1009_0_106_0_1316 >] - trying anyway
+[ForkJoinPool-1-worker-22] WARN UI - Rewritten return edges should converge to a single edge from 22713_1012_0_109_0_1320 but got [< 22713_1012_0_109_0_1320 --> 36677_1016_0_106_0_1322 >, < 22713_1012_0_109_0_1320 --> 36728_1016_0_106_0_1324 >] - trying anyway
+[ForkJoinPool-1-worker-8] WARN UI - internal function calls/returns not well-nested when exiting outermost internal call
+[ForkJoinPool-1-worker-36] WARN UI - internal function calls/returns not well-nested when exiting outermost internal call
+[ForkJoinPool-1-worker-35] WARN UI - internal function calls/returns not well-nested when exiting outermost internal call
+[ForkJoinPool-1-worker-6] WARN UI - internal function calls/returns not well-nested when exiting outermost internal call
+[ForkJoinPool-1-worker-37] WARN UI - internal function calls/returns not well-nested when exiting outermost internal call
+Verified: exploit_time_based_debt_manipulation-CheckAutoGeneratedAsserts
+Verified: exploit_uncovered_debt_calculation-CheckAutoGeneratedAsserts
+Verified: exploit_depletion_time_calculation-CheckAutoGeneratedAsserts
+Verified: exploit_pause_debt_manipulation-CheckAutoGeneratedAsserts
+exploit_pause_debt_manipulation-CheckAutoGeneratedAsserts: Properties successfully verified on all inputs
+exploit_depletion_time_calculation-CheckAutoGeneratedAsserts: Properties successfully verified on all inputs
+exploit_uncovered_debt_calculation-CheckAutoGeneratedAsserts: Properties successfully verified on all inputs
+exploit_time_based_debt_manipulation-CheckAutoGeneratedAsserts: Properties successfully verified on all inputs
+Verified: exploit_depletion_time_calculation-Assert_true_(CriticalExploits_spec_253_5)
+exploit_depletion_time_calculation-Assert_true_(CriticalExploits_spec_253_5): Properties successfully verified on all inputs
+[ForkJoinPool-1-worker-38] WARN UI - internal function calls/returns not well-nested when exiting outermost internal call
+[ForkJoinPool-1-worker-30] WARN UI - internal function calls/returns not well-nested when exiting outermost internal call
+Verified: exploit_refund_steals_covered_debt-CheckAutoGeneratedAsserts
+exploit_refund_steals_covered_debt-CheckAutoGeneratedAsserts: Properties successfully verified on all inputs
+Verified: exploit_refund_steals_covered_debt-Assert_true_(CriticalExploits_spec_116_5)
+exploit_refund_steals_covered_debt-Assert_true_(CriticalExploits_spec_116_5): Properties successfully verified on all inputs
+[ForkJoinPool-1-worker-12] WARN UI - internal function calls/returns not well-nested when exiting outermost internal call
+Verified: exploit_deposit_front_running-CheckAutoGeneratedAsserts
+exploit_deposit_front_running-CheckAutoGeneratedAsserts: Properties successfully verified on all inputs
+Verified: exploit_debt_overflow_manipulation-CheckAutoGeneratedAsserts
+exploit_debt_overflow_manipulation-CheckAutoGeneratedAsserts: Properties successfully verified on all inputs
+[ForkJoinPool-1-worker-15] WARN UI - internal function calls/returns not well-nested when exiting outermost internal call
+Verified: exploit_debt_overflow_manipulation-Assert_true_(CriticalExploits_spec_79_5)
+exploit_debt_overflow_manipulation-Assert_true_(CriticalExploits_spec_79_5): Properties successfully verified on all inputs
+[ForkJoinPool-1-worker-1] WARN UI - internal function calls/returns not well-nested when exiting outermost internal call
+Total time for exploit_uncovered_debt_calculation-Assert_CRITICAL_EXPLOIT__Covered_debt_exceeds_balance__insolvency_(CriticalExploits_spec_160_5): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for exploit_uncovered_debt_calculation-Assert_CRITICAL_EXPLOIT__Uncovered_debt_exists_but_balance_covers_total_debt_(CriticalExploits_spec_163_5): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for exploit_uncovered_debt_calculation-Assert_CRITICAL_EXPLOIT__Debt_accounting_mismatch__manipulation_possible_(CriticalExploits_spec_157_5): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: exploit_uncovered_debt_calculation-Assert_CRITICAL_EXPLOIT__Covered_debt_exceeds_balance__insolvency_(CriticalExploits_spec_160_5)
+exploit_uncovered_debt_calculation-Assert_CRITICAL_EXPLOIT__Covered_debt_exceeds_balance__insolvency_(CriticalExploits_spec_160_5): Properties successfully verified on all inputs
+Verified: exploit_uncovered_debt_calculation-Assert_CRITICAL_EXPLOIT__Uncovered_debt_exists_but_balance_covers_total_debt_(CriticalExploits_spec_163_5)
+exploit_uncovered_debt_calculation-Assert_CRITICAL_EXPLOIT__Uncovered_debt_exists_but_balance_covers_total_debt_(CriticalExploits_spec_163_5): Properties successfully verified on all inputs
+Verified: exploit_uncovered_debt_calculation-Assert_CRITICAL_EXPLOIT__Debt_accounting_mismatch__manipulation_possible_(CriticalExploits_spec_157_5)
+exploit_uncovered_debt_calculation-Assert_CRITICAL_EXPLOIT__Debt_accounting_mismatch__manipulation_possible_(CriticalExploits_spec_157_5): Properties successfully verified on all inputs
+Total time for exploit_time_based_debt_manipulation-Assert_CRITICAL_EXPLOIT__Debt_decreased_over_time__overflow_detected_(CriticalExploits_spec_223_5): 1 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Starting to run on rule exploit_uncovered_debt_calculation-rule_not_vacuous
+Verified: exploit_time_based_debt_manipulation-Assert_CRITICAL_EXPLOIT__Debt_decreased_over_time__overflow_detected_(CriticalExploits_spec_223_5)
+exploit_time_based_debt_manipulation-Assert_CRITICAL_EXPLOIT__Debt_decreased_over_time__overflow_detected_(CriticalExploits_spec_223_5): Properties successfully verified on all inputs
+Starting to run on rule exploit_time_based_debt_manipulation-rule_not_vacuous
+Total time for exploit_refund_steals_covered_debt-Assert_CRITICAL_EXPLOIT__Refund_extracted_more_than_excess_balance_(CriticalExploits_spec_114_9): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: exploit_refund_steals_covered_debt-Assert_CRITICAL_EXPLOIT__Refund_extracted_more_than_excess_balance_(CriticalExploits_spec_114_9)
+exploit_refund_steals_covered_debt-Assert_CRITICAL_EXPLOIT__Refund_extracted_more_than_excess_balance_(CriticalExploits_spec_114_9): Properties successfully verified on all inputs
+Total time for exploit_refund_steals_covered_debt-Assert_CRITICAL_EXPLOIT__Refund_stole_covered_debt_from_recipient_(CriticalExploits_spec_111_9): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: exploit_refund_steals_covered_debt-Assert_CRITICAL_EXPLOIT__Refund_stole_covered_debt_from_recipient_(CriticalExploits_spec_111_9)
+exploit_refund_steals_covered_debt-Assert_CRITICAL_EXPLOIT__Refund_stole_covered_debt_from_recipient_(CriticalExploits_spec_111_9): Properties successfully verified on all inputs
+Starting to run on rule exploit_refund_steals_covered_debt-rule_not_vacuous
+Total time for exploit_pause_debt_manipulation-Assert_CRITICAL_EXPLOIT__Pause_decreased_total_debt__manipulation_(CriticalExploits_spec_138_5): 1 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 1 seconds
+Violated: exploit_pause_debt_manipulation-Assert_CRITICAL_EXPLOIT__Pause_decreased_total_debt__manipulation_(CriticalExploits_spec_138_5)
+exploit_pause_debt_manipulation-Assert_CRITICAL_EXPLOIT__Pause_decreased_total_debt__manipulation_(CriticalExploits_spec_138_5): A property is violated
+[ForkJoinPool-1-worker-25] WARN UI - Rewritten return edges should converge to a single edge from 3_0_0_244_0_1990 but got [< 3_0_0_244_0_1990 --> 31057_1009_0_243_0_1999 >, < 3_0_0_244_0_1990 --> 30980_1009_0_243_0_1995 >, < 3_0_0_244_0_1990 --> 31042_1009_0_243_0_1997 >] - trying anyway
+[ForkJoinPool-1-worker-25] WARN UI - Rewritten return edges should converge to a single edge from 22713_1012_0_246_0_2001 but got [< 22713_1012_0_246_0_2001 --> 36677_1016_0_243_0_2003 >, < 22713_1012_0_246_0_2001 --> 36728_1016_0_243_0_2005 >] - trying anyway
+[ForkJoinPool-1-worker-25] WARN UI - Rewritten return edges should converge to a single edge from 5_0_0_249_0_2009 but got [< 5_0_0_249_0_2009 --> 31057_1009_0_248_0_2018 >, < 5_0_0_249_0_2009 --> 30980_1009_0_248_0_2014 >, < 5_0_0_249_0_2009 --> 31042_1009_0_248_0_2016 >] - trying anyway
+[ForkJoinPool-1-worker-25] WARN UI - Rewritten return edges should converge to a single edge from 22713_1012_0_251_0_2020 but got [< 22713_1012_0_251_0_2020 --> 36677_1016_0_248_0_2022 >, < 22713_1012_0_251_0_2020 --> 36728_1016_0_248_0_2024 >] - trying anyway
+[ForkJoinPool-1-worker-8] WARN UI - internal function calls/returns not well-nested when exiting outermost internal call
+Total time for exploit_debt_overflow_manipulation-Assert_CRITICAL_EXPLOIT__Withdrew_more_than_balance__overflow_detected_(CriticalExploits_spec_75_9): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+received `signalSkip` for rule exploit_pause_debt_manipulation-rule_not_vacuous
+Verified: exploit_debt_overflow_manipulation-Assert_CRITICAL_EXPLOIT__Withdrew_more_than_balance__overflow_detected_(CriticalExploits_spec_75_9)
+exploit_debt_overflow_manipulation-Assert_CRITICAL_EXPLOIT__Withdrew_more_than_balance__overflow_detected_(CriticalExploits_spec_75_9): Properties successfully verified on all inputs
+Result for exploit_pause_debt_manipulation: exploit_pause_debt_manipulation: Assert_CRITICAL_EXPLOIT__Pause_decreased_total_debt__manipulation_(CriticalExploits_spec_138_5): FAIL: CRITICAL EXPLOIT: Pause decreased total ...
+CheckAutoGeneratedAsserts: SUCCESS
+Total time for exploit_debt_overflow_manipulation-Assert_CRITICAL_EXPLOIT__Balance_accounting_broken__overflow_detected_(CriticalExploits_spec_77_9): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: exploit_debt_overflow_manipulation-Assert_CRITICAL_EXPLOIT__Balance_accounting_broken__overflow_detected_(CriticalExploits_spec_77_9)
+exploit_debt_overflow_manipulation-Assert_CRITICAL_EXPLOIT__Balance_accounting_broken__overflow_detected_(CriticalExploits_spec_77_9): Properties successfully verified on all inputs
+Total time for exploit_deposit_front_running-Assert_CRITICAL_EXPLOIT__Deposit_did_not_increase_balance__frontrun_attack_(CriticalExploits_spec_201_5): 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for exploit_time_based_debt_manipulation-rule_not_vacuous: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Violated: exploit_time_based_debt_manipulation-rule_not_vacuous
+exploit_time_based_debt_manipulation-rule_not_vacuous: A property is violated
+Verified: exploit_deposit_front_running-Assert_CRITICAL_EXPLOIT__Deposit_did_not_increase_balance__frontrun_attack_(CriticalExploits_spec_201_5)
+exploit_deposit_front_running-Assert_CRITICAL_EXPLOIT__Deposit_did_not_increase_balance__frontrun_attack_(CriticalExploits_spec_201_5): Properties successfully verified on all inputs
+[ForkJoinPool-1-worker-25] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON26:int, exp=e2.block.timestamp)) that is not in the builderState. Failed to construct its complete syntax-tree
+[ForkJoinPool-1-worker-25] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON16:int, exp=e1.block.timestamp)) that is not in the builderState. Failed to construct its complete syntax-tree
+[ForkJoinPool-1-worker-25] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON26:int, exp=to_mathint(e2.block.timestamp))) that is not in the builderState. Failed to construct its complete syntax-tree
+[ForkJoinPool-1-worker-25] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON16:int, exp=to_mathint(e1.block.timestamp))) that is not in the builderState. Failed to construct its complete syntax-tree
+[ForkJoinPool-1-worker-25] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON72!!151:int, exp=to_mathint(debt2))) that is not in the builderState. Failed to construct its complete syntax-tree
+[ForkJoinPool-1-worker-25] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON48!!148:int, exp=to_mathint(debt1))) that is not in the builderState. Failed to construct its complete syntax-tree
+Result for exploit_time_based_debt_manipulation: exploit_time_based_debt_manipulation: Assert_CRITICAL_EXPLOIT__Debt_decreased_over_time__overflow_detected_(CriticalExploits_spec_223_5): SUCCESS
+CheckAutoGeneratedAsserts: SUCCESS
+Starting to run on rule exploit_debt_overflow_manipulation-rule_not_vacuous
+Starting to run on rule exploit_deposit_front_running-rule_not_vacuous
+Total time for exploit_uncovered_debt_calculation-rule_not_vacuous: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Violated: exploit_uncovered_debt_calculation-rule_not_vacuous
+exploit_uncovered_debt_calculation-rule_not_vacuous: A property is violated
+[ForkJoinPool-1-worker-24] WARN UI - internal function calls/returns not well-nested when exiting outermost internal call
+[ForkJoinPool-1-worker-25] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON54!!185:int, exp=to_mathint(covered))) that is not in the builderState. Failed to construct its complete syntax-tree
+[ForkJoinPool-1-worker-25] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON71!!187:int, exp=to_mathint(uncovered))) that is not in the builderState. Failed to construct its complete syntax-tree
+[ForkJoinPool-1-worker-25] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON30!!239:int, exp=to_mathint(totalDebt))) that is not in the builderState. Failed to construct its complete syntax-tree
+Result for exploit_uncovered_debt_calculation: exploit_uncovered_debt_calculation: Assert_CRITICAL_EXPLOIT__Debt_accounting_mismatch__manipulation_possible_(CriticalExploits_spec_157_5): SUCCESS
+Assert_CRITICAL_EXPLOIT__Covered_debt_exceeds_balance__insolvency_(CriticalExploits_spec_160_5): SUCCESS
+Assert_CRITICAL_EXPLOIT__Uncovered_debt_exists_but_balance_covers_total_debt_(CriticalExploits_spec_163_5): SUCCESS
+CheckAutoGeneratedAsserts: SUCCESS
+[ForkJoinPool-1-worker-38] WARN UI - internal function calls/returns not well-nested when exiting outermost internal call
+[ForkJoinPool-1-worker-1] WARN UI - internal function calls/returns not well-nested when exiting outermost internal call
+[ForkJoinPool-1-worker-35] WARN COUNTEREXAMPLEMODEL - don't know how to process model entry "Annotate(tac.storage.access-paths := AccessPaths(paths=[S0xb[key tacCalldatabufCANON1@6:bv256].(offset 0x54)]), tacTmp!t37872!37873:bv256)" -> "0x0" (but might be fine)
+[ForkJoinPool-1-worker-35] WARN COUNTEREXAMPLEMODEL - don't know how to process model entry "Annotate(tac.storage.access-paths := AccessPaths(paths=[S0xb[key tacCalldatabufCANON1@6:bv256].(offset 0x3)]), tacTmp!t37870!37871:bv256)" -> "0x0" (but might be fine)
+[ForkJoinPool-1-worker-35] WARN COUNTEREXAMPLEMODEL - don't know how to process model entry "Annotate(tac.storage.access-paths := AccessPaths(paths=[S0xb[key tacCalldatabufCANON1@6:bv256].(offset 0x34)]), tacTmp!t37866!37867:bv256)" -> "0x0" (but might be fine)
+[ForkJoinPool-1-worker-35] WARN COUNTEREXAMPLEMODEL - don't know how to process model entry "Annotate(tac.storage.access-paths := AccessPaths(paths=[S0xb[key tacCalldatabufCANON1@6:bv256].(offset 0x10)]), tacTmp!t37868!37869:bv256)" -> "0x0" (but might be fine)
+Total time for exploit_refund_steals_covered_debt-rule_not_vacuous: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Violated: exploit_refund_steals_covered_debt-rule_not_vacuous
+exploit_refund_steals_covered_debt-rule_not_vacuous: A property is violated
+Result for exploit_refund_steals_covered_debt: exploit_refund_steals_covered_debt: Assert_CRITICAL_EXPLOIT__Refund_stole_covered_debt_from_recipient_(CriticalExploits_spec_111_9): SUCCESS
+Assert_CRITICAL_EXPLOIT__Refund_extracted_more_than_excess_balance_(CriticalExploits_spec_114_9): SUCCESS
+Assert_true_(CriticalExploits_spec_116_5): SUCCESS
+CheckAutoGeneratedAsserts: SUCCESS
+Attempted 10 splits, and proved a total weighing 93.75% for exploit_depletion_time_calculation-Assert_CRITICAL_EXPLOIT__Depletion_time_calculation_allows_overdraft_(CriticalExploits_spec_251_9)
+[ForkJoinPool-1-worker-6] WARN COUNTEREXAMPLEMODEL - don't know how to process model entry "Annotate(tac.storage.access-paths := AccessPaths(paths=[S0xb[key tacCalldatabufCANON1@10:bv256].(offset 0x39)]), tacTmp!t38969!38970:bv256)" -> "0x0" (but might be fine)
+Total time for exploit_debt_overflow_manipulation-rule_not_vacuous: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Violated: exploit_debt_overflow_manipulation-rule_not_vacuous
+exploit_debt_overflow_manipulation-rule_not_vacuous: A property is violated
+Total time for exploit_deposit_front_running-rule_not_vacuous: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Violated: exploit_deposit_front_running-rule_not_vacuous
+exploit_deposit_front_running-rule_not_vacuous: A property is violated
+[ForkJoinPool-1-worker-6] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON23:int, exp=e.block.timestamp)) that is not in the builderState. Failed to construct its complete syntax-tree
+[ForkJoinPool-1-worker-6] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON23:int, exp=e.block.timestamp)) that is not in the builderState. Failed to construct its complete syntax-tree
+[ForkJoinPool-1-worker-34] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON27:int, exp=e1.block.timestamp)) that is not in the builderState. Failed to construct its complete syntax-tree
+[ForkJoinPool-1-worker-34] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON37:int, exp=e2.block.timestamp)) that is not in the builderState. Failed to construct its complete syntax-tree
+[ForkJoinPool-1-worker-34] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON18:int, exp=e1.msg.sender)) that is not in the builderState. Failed to construct its complete syntax-tree
+[ForkJoinPool-1-worker-34] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON28:int, exp=e2.msg.sender)) that is not in the builderState. Failed to construct its complete syntax-tree
+[ForkJoinPool-1-worker-34] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON188!!362:int, exp=to_mathint(balanceAfter))) that is not in the builderState. Failed to construct its complete syntax-tree
+[ForkJoinPool-1-worker-34] WARN COMMON - Got a non-constant, non-variable operand (Operand(out=CANON11:int, exp=to_mathint(depositAmount))) that is not in the builderState. Failed to construct its complete syntax-tree
+Result for exploit_deposit_front_running: exploit_deposit_front_running: Assert_CRITICAL_EXPLOIT__Deposit_did_not_increase_balance__frontrun_attack_(CriticalExploits_spec_201_5): SUCCESS
+CheckAutoGeneratedAsserts: SUCCESS
+Result for exploit_debt_overflow_manipulation: exploit_debt_overflow_manipulation: Assert_CRITICAL_EXPLOIT__Withdrew_more_than_balance__overflow_detected_(CriticalExploits_spec_75_9): SUCCESS
+Assert_CRITICAL_EXPLOIT__Balance_accounting_broken__overflow_detected_(CriticalExploits_spec_77_9): SUCCESS
+Assert_true_(CriticalExploits_spec_79_5): SUCCESS
+CheckAutoGeneratedAsserts: SUCCESS
+Ping 1m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 2m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 3m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 4m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 5m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 6m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 7m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 8m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 9m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 10m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 11m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 12m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 13m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 14m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 15m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 16m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 17m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 18m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 19m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Ping 20m - Processed 7/8 (87%) rules. 38 tasks complete, 2 pending.
+Total time for exploit_depletion_time_calculation-Assert_CRITICAL_EXPLOIT__Depletion_time_calculation_allows_overdraft_(CriticalExploits_spec_251_9): 1208 seconds ; Split time: 0 seconds ; Number of problems: 17 ; Solver time : 1207 seconds
+exploit_depletion_time_calculation-Assert_CRITICAL_EXPLOIT__Depletion_time_calculation_allows_overdraft_(CriticalExploits_spec_251_9): Solver timed out
+[ForkJoinPool-1-worker-15] WARN UI - internal function calls/returns not well-nested when exiting outermost internal call
+received `signalSkip` for rule exploit_depletion_time_calculation-rule_not_vacuous
+Result for exploit_depletion_time_calculation: exploit_depletion_time_calculation: Assert_CRITICAL_EXPLOIT__Depletion_time_calculation_allows_overdraft_(CriticalExploits_spec_251_9): TIMEOUT
+Assert_true_(CriticalExploits_spec_253_5): SUCCESS
+CheckAutoGeneratedAsserts: SUCCESS
+Results for envfreeFuncsStaticCheck:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|getSnapshotDebtScaled(uint256)          |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|getSender(uint256)                      |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|getBalance(uint256)                     |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|getSnapshotTime(uint256)                |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|isVoided(uint256)                       |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|getRecipient(uint256)                   |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+
+Results for exploit_uncovered_debt_calculation:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|Assert_CRITICAL_EXPLOIT__Debt_accounting|Not violated |2         |                                                            |no local variables                                |
+|_mismatch__manipulation_possible_(Critic|(unsat)      |          |                                                            |                                                  |
+|alExploits_spec_157_5)                  |             |          |                                                            |                                                  |
+|Assert_CRITICAL_EXPLOIT__Covered_debt_ex|Not violated |2         |                                                            |no local variables                                |
+|ceeds_balance__insolvency_(CriticalExplo|(unsat)      |          |                                                            |                                                  |
+|its_spec_160_5)                         |             |          |                                                            |                                                  |
+|Assert_CRITICAL_EXPLOIT__Uncovered_debt_|Not violated |2         |                                                            |no local variables                                |
+|exists_but_balance_covers_total_debt_(Cr|(unsat)      |          |                                                            |                                                  |
+|iticalExploits_spec_163_5)              |             |          |                                                            |                                                  |
+|CheckAutoGeneratedAsserts               |Not violated |1         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+
+Results for exploit_time_based_debt_manipulation:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|Assert_CRITICAL_EXPLOIT__Debt_decreased_|Not violated |3         |                                                            |no local variables                                |
+|over_time__overflow_detected_(CriticalEx|(unsat)      |          |                                                            |                                                  |
+|ploits_spec_223_5)                      |             |          |                                                            |                                                  |
+|CheckAutoGeneratedAsserts               |Not violated |1         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+
+Results for exploit_refund_steals_covered_debt:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|Assert_CRITICAL_EXPLOIT__Refund_stole_co|Not violated |2         |                                                            |no local variables                                |
+|vered_debt_from_recipient_(CriticalExplo|(unsat)      |          |                                                            |                                                  |
+|its_spec_111_9)                         |             |          |                                                            |                                                  |
+|Assert_CRITICAL_EXPLOIT__Refund_extracte|Not violated |2         |                                                            |no local variables                                |
+|d_more_than_excess_balance_(CriticalExpl|(unsat)      |          |                                                            |                                                  |
+|oits_spec_114_9)                        |             |          |                                                            |                                                  |
+|Assert_true_(CriticalExploits_spec_116_5|Not violated |0         |                                                            |no local variables                                |
+|)                                       |(unsat)      |          |                                                            |                                                  |
+|CheckAutoGeneratedAsserts               |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+
+Results for exploit_pause_debt_manipulation:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|Assert_CRITICAL_EXPLOIT__Pause_decreased|Violated     |3         |Assert message: CRITICAL EXPLOIT: Pause decreased total ... |SablierFlow=9                                     |
+|_total_debt__manipulation_(CriticalExplo|(sat)        |          |                                                            |balanceBefore=0                                   |
+|its_spec_138_5)                         |             |          |                                                            |coveredBefore=0                                   |
+|                                        |             |          |                                                            |debtAfterPause=12                                 |
+|                                        |             |          |                                                            |e1.block.basefee=8                                |
+|                                        |             |          |                                                            |e1.block.blobbasefee=7                            |
+|                                        |             |          |                                                            |e1.block.coinbase=0x402                           |
+|                                        |             |          |                                                            |e1.block.difficulty=6                             |
+|                                        |             |          |                                                            |e1.block.gaslimit=5                               |
+|                                        |             |          |                                                            |e1.block.number=4                                 |
+|                                        |             |          |                                                            |e1.block.timestamp=2^41                           |
+|                                        |             |          |                                                            |e1.msg.sender=0x401                               |
+|                                        |             |          |                                                            |e1.msg.value=0                                    |
+|                                        |             |          |                                                            |e1.tx.origin=0x403                                |
+|                                        |             |          |                                                            |streamId=2                                        |
+|                                        |             |          |                                                            |totalDebtBefore=0xa0000000020                     |
+|CheckAutoGeneratedAsserts               |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+
+Results for exploit_debt_overflow_manipulation:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|Assert_CRITICAL_EXPLOIT__Withdrew_more_t|Not violated |2         |                                                            |no local variables                                |
+|han_balance__overflow_detected_(Critical|(unsat)      |          |                                                            |                                                  |
+|Exploits_spec_75_9)                     |             |          |                                                            |                                                  |
+|Assert_CRITICAL_EXPLOIT__Balance_account|Not violated |2         |                                                            |no local variables                                |
+|ing_broken__overflow_detected_(CriticalE|(unsat)      |          |                                                            |                                                  |
+|xploits_spec_77_9)                      |             |          |                                                            |                                                  |
+|Assert_true_(CriticalExploits_spec_79_5)|Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|CheckAutoGeneratedAsserts               |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+
+Results for exploit_deposit_front_running:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|Assert_CRITICAL_EXPLOIT__Deposit_did_not|Not violated |3         |                                                            |no local variables                                |
+|_increase_balance__frontrun_attack_(Crit|(unsat)      |          |                                                            |                                                  |
+|icalExploits_spec_201_5)                |             |          |                                                            |                                                  |
+|CheckAutoGeneratedAsserts               |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+
+Results for exploit_depletion_time_calculation:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|Assert_CRITICAL_EXPLOIT__Depletion_time_|Timeout      |1210      |                                                            |no local variables                                |
+|calculation_allows_overdraft_(CriticalEx|             |          |                                                            |                                                  |
+|ploits_spec_251_9)                      |             |          |                                                            |                                                  |
+|Assert_true_(CriticalExploits_spec_253_5|Not violated |0         |                                                            |no local variables                                |
+|)                                       |(unsat)      |          |                                                            |                                                  |
+|CheckAutoGeneratedAsserts               |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+
+Results for all:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|envfreeFuncsStaticCheck                 |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|CheckAutoGeneratedAsserts               |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|CheckAutoGeneratedAsserts               |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|CheckAutoGeneratedAsserts               |Not violated |1         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|CheckAutoGeneratedAsserts               |Not violated |1         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|Assert_true_(CriticalExploits_spec_253_5|Not violated |0         |                                                            |no local variables                                |
+|)                                       |(unsat)      |          |                                                            |                                                  |
+|CheckAutoGeneratedAsserts               |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|Assert_true_(CriticalExploits_spec_116_5|Not violated |0         |                                                            |no local variables                                |
+|)                                       |(unsat)      |          |                                                            |                                                  |
+|CheckAutoGeneratedAsserts               |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|CheckAutoGeneratedAsserts               |Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|Assert_true_(CriticalExploits_spec_79_5)|Not violated |0         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|Assert_CRITICAL_EXPLOIT__Covered_debt_ex|Not violated |2         |                                                            |no local variables                                |
+|ceeds_balance__insolvency_(CriticalExplo|(unsat)      |          |                                                            |                                                  |
+|its_spec_160_5)                         |             |          |                                                            |                                                  |
+|Assert_CRITICAL_EXPLOIT__Debt_accounting|Not violated |2         |                                                            |no local variables                                |
+|_mismatch__manipulation_possible_(Critic|(unsat)      |          |                                                            |                                                  |
+|alExploits_spec_157_5)                  |             |          |                                                            |                                                  |
+|Assert_CRITICAL_EXPLOIT__Uncovered_debt_|Not violated |2         |                                                            |no local variables                                |
+|exists_but_balance_covers_total_debt_(Cr|(unsat)      |          |                                                            |                                                  |
+|iticalExploits_spec_163_5)              |             |          |                                                            |                                                  |
+|exploit_uncovered_debt_calculation      |Not violated |3         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|Assert_CRITICAL_EXPLOIT__Debt_decreased_|Not violated |3         |                                                            |no local variables                                |
+|over_time__overflow_detected_(CriticalEx|(unsat)      |          |                                                            |                                                  |
+|ploits_spec_223_5)                      |             |          |                                                            |                                                  |
+|exploit_time_based_debt_manipulation    |Not violated |3         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|Assert_CRITICAL_EXPLOIT__Refund_extracte|Not violated |2         |                                                            |no local variables                                |
+|d_more_than_excess_balance_(CriticalExpl|(unsat)      |          |                                                            |                                                  |
+|oits_spec_114_9)                        |             |          |                                                            |                                                  |
+|Assert_CRITICAL_EXPLOIT__Refund_stole_co|Not violated |2         |                                                            |no local variables                                |
+|vered_debt_from_recipient_(CriticalExplo|(unsat)      |          |                                                            |                                                  |
+|its_spec_111_9)                         |             |          |                                                            |                                                  |
+|exploit_refund_steals_covered_debt      |Not violated |2         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|Assert_CRITICAL_EXPLOIT__Pause_decreased|Violated     |3         |Assert message: CRITICAL EXPLOIT: Pause decreased total ... |SablierFlow=9                                     |
+|_total_debt__manipulation_(CriticalExplo|(sat)        |          |                                                            |balanceBefore=0                                   |
+|its_spec_138_5)                         |             |          |                                                            |coveredBefore=0                                   |
+|                                        |             |          |                                                            |debtAfterPause=12                                 |
+|                                        |             |          |                                                            |e1.block.basefee=8                                |
+|                                        |             |          |                                                            |e1.block.blobbasefee=7                            |
+|                                        |             |          |                                                            |e1.block.coinbase=0x402                           |
+|                                        |             |          |                                                            |e1.block.difficulty=6                             |
+|                                        |             |          |                                                            |e1.block.gaslimit=5                               |
+|                                        |             |          |                                                            |e1.block.number=4                                 |
+|                                        |             |          |                                                            |e1.block.timestamp=2^41                           |
+|                                        |             |          |                                                            |e1.msg.sender=0x401                               |
+|                                        |             |          |                                                            |e1.msg.value=0                                    |
+|                                        |             |          |                                                            |e1.tx.origin=0x403                                |
+|                                        |             |          |                                                            |streamId=2                                        |
+|                                        |             |          |                                                            |totalDebtBefore=0xa0000000020                     |
+|exploit_pause_debt_manipulation         |Violated     |4         |Assert message: CRITICAL EXPLOIT: Pause decreased total ... |no local variables                                |
+|                                        |(sat)        |          |                                                            |                                                  |
+|Assert_CRITICAL_EXPLOIT__Withdrew_more_t|Not violated |2         |                                                            |no local variables                                |
+|han_balance__overflow_detected_(Critical|(unsat)      |          |                                                            |                                                  |
+|Exploits_spec_75_9)                     |             |          |                                                            |                                                  |
+|Assert_CRITICAL_EXPLOIT__Balance_account|Not violated |2         |                                                            |no local variables                                |
+|ing_broken__overflow_detected_(CriticalE|(unsat)      |          |                                                            |                                                  |
+|xploits_spec_77_9)                      |             |          |                                                            |                                                  |
+|exploit_debt_overflow_manipulation      |Not violated |3         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|Assert_CRITICAL_EXPLOIT__Deposit_did_not|Not violated |3         |                                                            |no local variables                                |
+|_increase_balance__frontrun_attack_(Crit|(unsat)      |          |                                                            |                                                  |
+|icalExploits_spec_201_5)                |             |          |                                                            |                                                  |
+|exploit_deposit_front_running           |Not violated |3         |                                                            |no local variables                                |
+|                                        |(unsat)      |          |                                                            |                                                  |
+|rule_not_vacuous                        |Not violated |1         |Assert message: sanity check for rule exploit_time_based... |SablierFlow=2^159                                 |
+|                                        |(sat)        |          |                                                            |debt1=1                                           |
+|                                        |             |          |                                                            |debt2=1                                           |
+|                                        |             |          |                                                            |e1.block.basefee=2^255 - 1                        |
+|                                        |             |          |                                                            |e1.block.blobbasefee=2^255 - 1                    |
+|                                        |             |          |                                                            |e1.block.coinbase=0x7fffffffffffffffffffffffffffff|
+|                                        |             |          |                                                            |ffffffffff                                        |
+|                                        |             |          |                                                            |e1.block.difficulty=2^255 - 1                     |
+|                                        |             |          |                                                            |e1.block.gaslimit=2^255 - 1                       |
+|                                        |             |          |                                                            |e1.block.number=2^255 - 1                         |
+|                                        |             |          |                                                            |e1.block.timestamp=0x2000784ce0                   |
+|                                        |             |          |                                                            |e1.msg.sender=0x7fffffffffffffffffffffffffffffffff|
+|                                        |             |          |                                                            |ffffff                                            |
+|                                        |             |          |                                                            |e1.msg.value=0                                    |
+|                                        |             |          |                                                            |e1.tx.origin=0x7ffffffffffffffffffffffffffffffffff|
+|                                        |             |          |                                                            |fffff                                             |
+|                                        |             |          |                                                            |e2.block.basefee=2^255 - 1                        |
+|                                        |             |          |                                                            |e2.block.blobbasefee=2^255 - 1                    |
+|                                        |             |          |                                                            |e2.block.coinbase=0x7fffffffffffffffffffffffffffff|
+|                                        |             |          |                                                            |ffffffffff                                        |
+|                                        |             |          |                                                            |e2.block.difficulty=2^255 - 1                     |
+|                                        |             |          |                                                            |e2.block.gaslimit=2^255 - 1                       |
+|                                        |             |          |                                                            |e2.block.number=2^255 - 1                         |
+|                                        |             |          |                                                            |e2.block.timestamp=0x4000f099c0                   |
+|                                        |             |          |                                                            |e2.msg.sender=0x7fffffffffffffffffffffffffffffffff|
+|                                        |             |          |                                                            |ffffff                                            |
+|                                        |             |          |                                                            |e2.msg.value=0                                    |
+|                                        |             |          |                                                            |e2.tx.origin=0x7ffffffffffffffffffffffffffffffffff|
+|                                        |             |          |                                                            |fffff                                             |
+|                                        |             |          |                                                            |streamId=2^255 - 1                                |
+|rule_not_vacuous                        |Not violated |1         |Assert message: sanity check for rule exploit_uncovered_... |SablierFlow=10002                                 |
+|                                        |(sat)        |          |                                                            |balance=0                                         |
+|                                        |             |          |                                                            |covered=0                                         |
+|                                        |             |          |                                                            |e.block.basefee=0                                 |
+|                                        |             |          |                                                            |e.block.blobbasefee=0                             |
+|                                        |             |          |                                                            |e.block.coinbase=0x0                              |
+|                                        |             |          |                                                            |e.block.difficulty=0                              |
+|                                        |             |          |                                                            |e.block.gaslimit=0                                |
+|                                        |             |          |                                                            |e.block.number=0                                  |
+|                                        |             |          |                                                            |e.block.timestamp=1                               |
+|                                        |             |          |                                                            |e.msg.sender=0x2711                               |
+|                                        |             |          |                                                            |e.msg.value=0                                     |
+|                                        |             |          |                                                            |e.tx.origin=0x0                                   |
+|                                        |             |          |                                                            |streamId=42600                                    |
+|                                        |             |          |                                                            |totalDebt=367                                     |
+|                                        |             |          |                                                            |uncovered=367                                     |
+|rule_not_vacuous                        |Not violated |2         |Assert message: sanity check for rule exploit_refund_ste... |SablierFlow=0xffffffffffffffffffffffffffffffffffff|
+|                                        |(sat)        |          |                                                            |e855                                              |
+|                                        |             |          |                                                            |balanceBefore=0xffffffffffffffffffffffffffff8f38  |
+|                                        |             |          |                                                            |coveredBefore=0xffffffffffffffffffffffffffff8f37  |
+|                                        |             |          |                                                            |e.block.basefee=0                                 |
+|                                        |             |          |                                                            |e.block.blobbasefee=0                             |
+|                                        |             |          |                                                            |e.block.coinbase=0x0                              |
+|                                        |             |          |                                                            |e.block.difficulty=0                              |
+|                                        |             |          |                                                            |e.block.gaslimit=0                                |
+|                                        |             |          |                                                            |e.block.number=0                                  |
+|                                        |             |          |                                                            |e.block.timestamp=1                               |
+|                                        |             |          |                                                            |e.msg.sender=0x4dfb                               |
+|                                        |             |          |                                                            |e.msg.value=0                                     |
+|                                        |             |          |                                                            |e.tx.origin=0x0                                   |
+|                                        |             |          |                                                            |refundAmount=1                                    |
+|                                        |             |          |                                                            |refundableBefore=1                                |
+|                                        |             |          |                                                            |streamId=21575                                    |
+|rule_not_vacuous                        |Not violated |2         |Assert message: sanity check for rule exploit_deposit_fr... |SablierFlow=10001                                 |
+|                                        |(sat)        |          |                                                            |attacker=0x178d                                   |
+|                                        |             |          |                                                            |balanceAfter=1                                    |
+|                                        |             |          |                                                            |balanceBefore=0                                   |
+|                                        |             |          |                                                            |coveredAfter=0                                    |
+|                                        |             |          |                                                            |coveredBeforeAttack=0                             |
+|                                        |             |          |                                                            |depositAmount=1                                   |
+|                                        |             |          |                                                            |e1.block.basefee=0                                |
+|                                        |             |          |                                                            |e1.block.blobbasefee=0                            |
+|                                        |             |          |                                                            |e1.block.coinbase=0x0                             |
+|                                        |             |          |                                                            |e1.block.difficulty=0                             |
+|                                        |             |          |                                                            |e1.block.gaslimit=0                               |
+|                                        |             |          |                                                            |e1.block.number=0                                 |
+|                                        |             |          |                                                            |e1.block.timestamp=3600                           |
+|                                        |             |          |                                                            |e1.msg.sender=0x178d                              |
+|                                        |             |          |                                                            |e1.msg.value=0                                    |
+|                                        |             |          |                                                            |e1.tx.origin=0x0                                  |
+|                                        |             |          |                                                            |e2.block.basefee=0                                |
+|                                        |             |          |                                                            |e2.block.blobbasefee=0                            |
+|                                        |             |          |                                                            |e2.block.coinbase=0x0                             |
+|                                        |             |          |                                                            |e2.block.difficulty=0                             |
+|                                        |             |          |                                                            |e2.block.gaslimit=0                               |
+|                                        |             |          |                                                            |e2.block.number=0                                 |
+|                                        |             |          |                                                            |e2.block.timestamp=3600                           |
+|                                        |             |          |                                                            |e2.msg.sender=0x26b1                              |
+|                                        |             |          |                                                            |e2.msg.value=0                                    |
+|                                        |             |          |                                                            |e2.tx.origin=0x0                                  |
+|                                        |             |          |                                                            |recipient=0xffffffffffffffffffffffffffffffffffffff|
+|                                        |             |          |                                                            |ff                                                |
+|                                        |             |          |                                                            |sender=0xffffffffffffffffffffffffffffffffffffffff |
+|                                        |             |          |                                                            |streamId=8079                                     |
+|                                        |             |          |                                                            |totalDebtBefore=0                                 |
+|                                        |             |          |                                                            |victim=0x26b1                                     |
+|rule_not_vacuous                        |Not violated |2         |Assert message: sanity check for rule exploit_debt_overf... |SablierFlow=10004                                 |
+|                                        |(sat)        |          |                                                            |balanceBefore=0                                   |
+|                                        |             |          |                                                            |coveredBefore=0                                   |
+|                                        |             |          |                                                            |e.block.basefee=0                                 |
+|                                        |             |          |                                                            |e.block.blobbasefee=0                             |
+|                                        |             |          |                                                            |e.block.coinbase=0x0                              |
+|                                        |             |          |                                                            |e.block.difficulty=0                              |
+|                                        |             |          |                                                            |e.block.gaslimit=0                                |
+|                                        |             |          |                                                            |e.block.number=0                                  |
+|                                        |             |          |                                                            |e.block.timestamp=10                              |
+|                                        |             |          |                                                            |e.msg.sender=0x2713                               |
+|                                        |             |          |                                                            |e.msg.value=0                                     |
+|                                        |             |          |                                                            |e.tx.origin=0x0                                   |
+|                                        |             |          |                                                            |maxDebt=MAX_UINT256                               |
+|                                        |             |          |                                                            |scaledRate=10                                     |
+|                                        |             |          |                                                            |snapshotDebtScaled=0                              |
+|                                        |             |          |                                                            |snapshotTime=0                                    |
+|                                        |             |          |                                                            |streamId=10001                                    |
+|                                        |             |          |                                                            |timeDelta=10                                      |
+|                                        |             |          |                                                            |totalDebtBefore=1                                 |
+|                                        |             |          |                                                            |withdrawAmount=0                                  |
+|Assert_CRITICAL_EXPLOIT__Depletion_time_|Timeout      |1210      |                                                            |no local variables                                |
+|calculation_allows_overdraft_(CriticalEx|             |          |                                                            |                                                  |
+|ploits_spec_251_9)                      |             |          |                                                            |                                                  |
+|exploit_depletion_time_calculation      |Timeout      |1211      |                                                            |no local variables                                |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+
+Failures summary:
+Failed on Assert_CRITICAL_EXPLOIT__Pause_decreased_total_debt__manipulation_(CriticalExploits_spec_138_5):
+Assert message: CRITICAL EXPLOIT: Pause decreased total ...
+
+
+Failed on exploit_pause_debt_manipulation:
+Assert message: CRITICAL EXPLOIT: Pause decreased total ...
+Violated for: 
+Assert_CRITICAL_EXPLOIT__Pause_decreased_total_debt__manipulation_(CriticalExploits_spec_138_5)
+
+Failed on rule_not_vacuous:
+Assert message: sanity check for rule exploit_time_based...
+
+sanity check (vacuity of rule) for rule exploit_time_based_debt_manipulation
+Failed on rule_not_vacuous:
+Assert message: sanity check for rule exploit_uncovered_...
+
+sanity check (vacuity of rule) for rule exploit_uncovered_debt_calculation
+Failed on rule_not_vacuous:
+Assert message: sanity check for rule exploit_refund_ste...
+
+sanity check (vacuity of rule) for rule exploit_refund_steals_covered_debt
+Failed on rule_not_vacuous:
+Assert message: sanity check for rule exploit_deposit_fr...
+
+sanity check (vacuity of rule) for rule exploit_deposit_front_running
+Failed on rule_not_vacuous:
+Assert message: sanity check for rule exploit_debt_overf...
+
+sanity check (vacuity of rule) for rule exploit_debt_overflow_manipulation
+Failed on Assert_CRITICAL_EXPLOIT__Depletion_time_calculation_allows_overdraft_(CriticalExploits_spec_251_9):
+
+
+TIMEOUT
+Failed on exploit_depletion_time_calculation:
+
+Timeout result: 
+Assert_CRITICAL_EXPLOIT__Depletion_time_calculation_allows_overdraft_(CriticalExploits_spec_251_9)
+
+
+Duration 1240512, RuleCheckResultsStats: numTotal = 7; numVerified = 5; numViolated = 1; numTimeout = 1; numError = 0
+Done 20m
+Event reporter: all events were sent without errors
+Reports in file:///home/dok/web3/sabier/flow/emv-1-certora-26-Dec--22-04/Reports
+Final report in emv-1-certora-26-Dec--22-04/Reports/FinalResults.html

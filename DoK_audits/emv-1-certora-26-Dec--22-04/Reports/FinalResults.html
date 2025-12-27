@@ -1,0 +1,171 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<a name='PageTop'><h2>Certora Prover results for contract</h2></a>
+<a href='#AvailableContracts'>Go to available contracts listing</a>
+<h3>Results for main:</h3>
+<table class="table table-bordered table-hover">
+<tr class="thead-light">
+<th><a href='' target='_blank'>Rule name</a></th><th>Result</th><th>Time (seconds)</th><th>Details</th><th>Local variables</th></tr>
+<tr class="table-warning">
+<td><a href='#envfreeFuncsStaticCheck'>envfreeFuncsStaticCheck</a></td><td>Not violated (unsat)</td><td>0</td><td>            Success(All passed!<br/>
+)<br/></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#main-exploit_pause_debt_manipulation'>exploit_pause_debt_manipulation</a></td><td>Violated (sat)</td><td>4</td><td>Assert message: CRITICAL EXPLOIT: Pause decreased total ...<br/>            Success(Violated for: <br/>
+Assert_CRITICAL_EXPLOIT__Pause_decreased_total_debt__manipulation_(CriticalExploits_spec_138_5)<br/>
+)<br/></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#main-exploit_time_based_debt_manipulation'>exploit_time_based_debt_manipulation</a></td><td>Not violated (unsat)</td><td>3</td><td>            Success(All passed!<br/>
+)<br/></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#main-exploit_uncovered_debt_calculation'>exploit_uncovered_debt_calculation</a></td><td>Not violated (unsat)</td><td>3</td><td>            Success(All passed!<br/>
+)<br/></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#main-exploit_refund_steals_covered_debt'>exploit_refund_steals_covered_debt</a></td><td>Not violated (unsat)</td><td>2</td><td>            Success(All passed!<br/>
+)<br/></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#main-exploit_deposit_front_running'>exploit_deposit_front_running</a></td><td>Not violated (unsat)</td><td>3</td><td>            Success(All passed!<br/>
+)<br/></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#main-exploit_debt_overflow_manipulation'>exploit_debt_overflow_manipulation</a></td><td>Not violated (unsat)</td><td>3</td><td>            Success(All passed!<br/>
+)<br/></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#main-exploit_depletion_time_calculation'>exploit_depletion_time_calculation</a></td><td>Timeout</td><td>1211</td><td>            Success(Timeout result: <br/>
+Assert_CRITICAL_EXPLOIT__Depletion_time_calculation_allows_overdraft_(CriticalExploits_spec_251_9)<br/>
+)<br/></td><td>no local variables</td></tr>
+</table>
+<br/>
+<a name='envfreeFuncsStaticCheck'>
+<h3>Results for envfreeFuncsStaticCheck:</h3>
+<a href='#PageTop'>Go back to top</a>
+</a>
+<table class="table table-bordered table-hover">
+<tr class="thead-light">
+<th><a href='' target='_blank'>Rule name</a></th><th>Result</th><th>Time (seconds)</th><th>Details</th><th>Local variables</th></tr>
+<tr class="table-warning">
+<td><a href='#getSnapshotDebtScaled(uint256)'>getSnapshotDebtScaled(uint256)</a></td><td>Not violated (unsat)</td><td>0</td><td>Success(Envfree method SablierFlow.getSnapshotDebtScaled(uint256 streamId) returns (uint256) is OK)<br/></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#getSender(uint256)'>getSender(uint256)</a></td><td>Not violated (unsat)</td><td>0</td><td>Success(Envfree method SablierFlow.getSender(uint256 streamId) returns (address) is OK)<br/></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#getBalance(uint256)'>getBalance(uint256)</a></td><td>Not violated (unsat)</td><td>0</td><td>Success(Envfree method SablierFlow.getBalance(uint256 streamId) returns (uint128) is OK)<br/></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#getSnapshotTime(uint256)'>getSnapshotTime(uint256)</a></td><td>Not violated (unsat)</td><td>0</td><td>Success(Envfree method SablierFlow.getSnapshotTime(uint256 streamId) returns (uint40) is OK)<br/></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#isVoided(uint256)'>isVoided(uint256)</a></td><td>Not violated (unsat)</td><td>0</td><td>Success(Envfree method SablierFlow.isVoided(uint256 streamId) returns (bool) is OK)<br/></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#getRecipient(uint256)'>getRecipient(uint256)</a></td><td>Not violated (unsat)</td><td>0</td><td>Success(Envfree method SablierFlow.getRecipient(uint256 streamId) returns (address) is OK)<br/></td><td>no local variables</td></tr>
+</table>
+<br/>
+<a name='exploit_pause_debt_manipulation'>
+<h3>Assert results for exploit_pause_debt_manipulation:</h3>
+<a href='#PageTop'>Go back to top</a>
+</a>
+<table class="table table-bordered table-hover">
+<tr class="thead-light">
+<th><a href='' target='_blank'>Assertions</a></th><th>Result</th><th>Time (seconds)</th><th>Details</th><th>Local variables</th></tr>
+<tr class="table-warning">
+<td><a href='#Assert_CRITICAL_EXPLOIT__Pause_decreased_total_debt__manipulation_(CriticalExploits_spec_138_5)'>Assert_CRITICAL_EXPLOIT__Pause_decreased_total_debt__manipulation_(CriticalExploits_spec_138_5)</a></td><td>Violated (sat)</td><td>3</td><td>Assert message: CRITICAL EXPLOIT: Pause decreased total ...<br/></td><td>SablierFlow=9<br>balanceBefore=0<br>coveredBefore=0<br>debtAfterPause=12<br>e1.block.basefee=8<br>e1.block.blobbasefee=7<br>e1.block.coinbase=0x402<br>e1.block.difficulty=6<br>e1.block.gaslimit=5<br>e1.block.number=4<br>e1.block.timestamp=2^41<br>e1.msg.sender=0x401<br>e1.msg.value=0<br>e1.tx.origin=0x403<br>streamId=2<br>totalDebtBefore=0xa0000000020</td></tr>
+<tr class="table-warning">
+<td><a href='#CheckAutoGeneratedAsserts'>CheckAutoGeneratedAsserts</a></td><td>Not violated (unsat)</td><td>0</td><td></td><td>no local variables</td></tr>
+</table>
+<br/>
+<a name='exploit_time_based_debt_manipulation'>
+<h3>Assert results for exploit_time_based_debt_manipulation:</h3>
+<a href='#PageTop'>Go back to top</a>
+</a>
+<table class="table table-bordered table-hover">
+<tr class="thead-light">
+<th><a href='' target='_blank'>Assertions</a></th><th>Result</th><th>Time (seconds)</th><th>Details</th><th>Local variables</th></tr>
+<tr class="table-warning">
+<td><a href='#Assert_CRITICAL_EXPLOIT__Debt_decreased_over_time__overflow_detected_(CriticalExploits_spec_223_5)'>Assert_CRITICAL_EXPLOIT__Debt_decreased_over_time__overflow_detected_(CriticalExploits_spec_223_5)</a></td><td>Not violated (unsat)</td><td>3</td><td></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#CheckAutoGeneratedAsserts'>CheckAutoGeneratedAsserts</a></td><td>Not violated (unsat)</td><td>1</td><td></td><td>no local variables</td></tr>
+</table>
+<br/>
+<a name='exploit_uncovered_debt_calculation'>
+<h3>Assert results for exploit_uncovered_debt_calculation:</h3>
+<a href='#PageTop'>Go back to top</a>
+</a>
+<table class="table table-bordered table-hover">
+<tr class="thead-light">
+<th><a href='' target='_blank'>Assertions</a></th><th>Result</th><th>Time (seconds)</th><th>Details</th><th>Local variables</th></tr>
+<tr class="table-warning">
+<td><a href='#Assert_CRITICAL_EXPLOIT__Debt_accounting_mismatch__manipulation_possible_(CriticalExploits_spec_157_5)'>Assert_CRITICAL_EXPLOIT__Debt_accounting_mismatch__manipulation_possible_(CriticalExploits_spec_157_5)</a></td><td>Not violated (unsat)</td><td>2</td><td></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#Assert_CRITICAL_EXPLOIT__Covered_debt_exceeds_balance__insolvency_(CriticalExploits_spec_160_5)'>Assert_CRITICAL_EXPLOIT__Covered_debt_exceeds_balance__insolvency_(CriticalExploits_spec_160_5)</a></td><td>Not violated (unsat)</td><td>2</td><td></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#Assert_CRITICAL_EXPLOIT__Uncovered_debt_exists_but_balance_covers_total_debt_(CriticalExploits_spec_163_5)'>Assert_CRITICAL_EXPLOIT__Uncovered_debt_exists_but_balance_covers_total_debt_(CriticalExploits_spec_163_5)</a></td><td>Not violated (unsat)</td><td>2</td><td></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#CheckAutoGeneratedAsserts'>CheckAutoGeneratedAsserts</a></td><td>Not violated (unsat)</td><td>1</td><td></td><td>no local variables</td></tr>
+</table>
+<br/>
+<a name='exploit_refund_steals_covered_debt'>
+<h3>Assert results for exploit_refund_steals_covered_debt:</h3>
+<a href='#PageTop'>Go back to top</a>
+</a>
+<table class="table table-bordered table-hover">
+<tr class="thead-light">
+<th><a href='' target='_blank'>Assertions</a></th><th>Result</th><th>Time (seconds)</th><th>Details</th><th>Local variables</th></tr>
+<tr class="table-warning">
+<td><a href='#Assert_CRITICAL_EXPLOIT__Refund_stole_covered_debt_from_recipient_(CriticalExploits_spec_111_9)'>Assert_CRITICAL_EXPLOIT__Refund_stole_covered_debt_from_recipient_(CriticalExploits_spec_111_9)</a></td><td>Not violated (unsat)</td><td>2</td><td></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#Assert_CRITICAL_EXPLOIT__Refund_extracted_more_than_excess_balance_(CriticalExploits_spec_114_9)'>Assert_CRITICAL_EXPLOIT__Refund_extracted_more_than_excess_balance_(CriticalExploits_spec_114_9)</a></td><td>Not violated (unsat)</td><td>2</td><td></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#Assert_true_(CriticalExploits_spec_116_5)'>Assert_true_(CriticalExploits_spec_116_5)</a></td><td>Not violated (unsat)</td><td>0</td><td></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#CheckAutoGeneratedAsserts'>CheckAutoGeneratedAsserts</a></td><td>Not violated (unsat)</td><td>0</td><td></td><td>no local variables</td></tr>
+</table>
+<br/>
+<a name='exploit_deposit_front_running'>
+<h3>Assert results for exploit_deposit_front_running:</h3>
+<a href='#PageTop'>Go back to top</a>
+</a>
+<table class="table table-bordered table-hover">
+<tr class="thead-light">
+<th><a href='' target='_blank'>Assertions</a></th><th>Result</th><th>Time (seconds)</th><th>Details</th><th>Local variables</th></tr>
+<tr class="table-warning">
+<td><a href='#Assert_CRITICAL_EXPLOIT__Deposit_did_not_increase_balance__frontrun_attack_(CriticalExploits_spec_201_5)'>Assert_CRITICAL_EXPLOIT__Deposit_did_not_increase_balance__frontrun_attack_(CriticalExploits_spec_201_5)</a></td><td>Not violated (unsat)</td><td>3</td><td></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#CheckAutoGeneratedAsserts'>CheckAutoGeneratedAsserts</a></td><td>Not violated (unsat)</td><td>0</td><td></td><td>no local variables</td></tr>
+</table>
+<br/>
+<a name='exploit_debt_overflow_manipulation'>
+<h3>Assert results for exploit_debt_overflow_manipulation:</h3>
+<a href='#PageTop'>Go back to top</a>
+</a>
+<table class="table table-bordered table-hover">
+<tr class="thead-light">
+<th><a href='' target='_blank'>Assertions</a></th><th>Result</th><th>Time (seconds)</th><th>Details</th><th>Local variables</th></tr>
+<tr class="table-warning">
+<td><a href='#Assert_CRITICAL_EXPLOIT__Withdrew_more_than_balance__overflow_detected_(CriticalExploits_spec_75_9)'>Assert_CRITICAL_EXPLOIT__Withdrew_more_than_balance__overflow_detected_(CriticalExploits_spec_75_9)</a></td><td>Not violated (unsat)</td><td>2</td><td></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#Assert_CRITICAL_EXPLOIT__Balance_accounting_broken__overflow_detected_(CriticalExploits_spec_77_9)'>Assert_CRITICAL_EXPLOIT__Balance_accounting_broken__overflow_detected_(CriticalExploits_spec_77_9)</a></td><td>Not violated (unsat)</td><td>2</td><td></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#Assert_true_(CriticalExploits_spec_79_5)'>Assert_true_(CriticalExploits_spec_79_5)</a></td><td>Not violated (unsat)</td><td>0</td><td></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#CheckAutoGeneratedAsserts'>CheckAutoGeneratedAsserts</a></td><td>Not violated (unsat)</td><td>0</td><td></td><td>no local variables</td></tr>
+</table>
+<br/>
+<a name='exploit_depletion_time_calculation'>
+<h3>Assert results for exploit_depletion_time_calculation:</h3>
+<a href='#PageTop'>Go back to top</a>
+</a>
+<table class="table table-bordered table-hover">
+<tr class="thead-light">
+<th><a href='' target='_blank'>Assertions</a></th><th>Result</th><th>Time (seconds)</th><th>Details</th><th>Local variables</th></tr>
+<tr class="table-warning">
+<td><a href='#Assert_CRITICAL_EXPLOIT__Depletion_time_calculation_allows_overdraft_(CriticalExploits_spec_251_9)'>Assert_CRITICAL_EXPLOIT__Depletion_time_calculation_allows_overdraft_(CriticalExploits_spec_251_9)</a></td><td>Timeout</td><td>1210</td><td>            Success(<br/>
+TIMEOUT)<br/></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#Assert_true_(CriticalExploits_spec_253_5)'>Assert_true_(CriticalExploits_spec_253_5)</a></td><td>Not violated (unsat)</td><td>0</td><td></td><td>no local variables</td></tr>
+<tr class="table-warning">
+<td><a href='#CheckAutoGeneratedAsserts'>CheckAutoGeneratedAsserts</a></td><td>Not violated (unsat)</td><td>0</td><td></td><td>no local variables</td></tr>
+</table>
+<br/>
+<a name='AvailableContracts'><h2>Available contracts</h2></a>
+<table class="table table-bordered table-hover">
+<tr><th>Name</th><th>Address</th><th>Pre-state</th><th colspan='2'>Methods</th></tr>
+<tr>
+<td>SablierFlow</td>
+<td>ce4604a0000000000000000000000025</td>
+<td>{}</td>
+<td>constructor(address,address) /*(0)*/ <br/>setNativeToken(address) /*(6da1e102)*/ <br/>deposit(uint256,uint128,address,address) /*(b61f7583)*/  /*potentially_payable*/ <br/>depletionTimeOf(uint256) returns (uint256) /*(d4b80884)*/ <br/>name() returns (string) /*(06fdde03)*/ <br/>refund(uint256,uint128) /*(81632a86)*/  /*potentially_payable*/ <br/>getSnapshotDebtScaled(uint256) returns (uint256) /*(450ac908)*/ <br/>getStream(uint256) returns (Flow.Stream) /*(894e9a0d)*/ <br/>safeTransferFrom(address,address,uint256) /*(42842e0e)*/ <br/>withdrawMax(uint256,address) returns (uint128) /*(ea5ead19)*/  /*potentially_payable*/ <br/>refundAndPause(uint256,uint128) /*(379d871a)*/  /*potentially_payable*/ <br/>restart(uint256,UD21x18) /*(ebb6f79a)*/  /*potentially_payable*/ <br/>depositAndPause(uint256,uint128) /*(bcbd019e)*/  /*potentially_payable*/ <br/>ownerOf(uint256) returns (address) /*(6352211e)*/ <br/>totalDebtOf(uint256) returns (uint256) /*(08b87923)*/ <br/>refundMax(uint256) returns (uint128) /*(0c699624)*/  /*potentially_payable*/ <br/>getRatePerSecond(uint256) returns (UD21x18) /*(80448da3)*/ <br/>adjustRatePerSecond(uint256,UD21x18) /*(a8a482a6)*/  /*potentially_payable*/ <br/>supportsInterface(bytes4) returns (bool) /*(01ffc9a7)*/ <br/>ongoingDebtScaledOf(uint256) returns (uint256) /*(7ddf9228)*/ <br/>getSender(uint256) returns (address) /*(b971302a)*/ <br/>balanceOf(address) returns (uint256) /*(70a08231)*/ <br/>approve(address,uint256) /*(095ea7b3)*/ <br/>getToken(uint256) returns (Contract IERC20) /*(e4b50cb8)*/ <br/>getBalance(uint256) returns (uint128) /*(1e010439)*/ <br/>aggregateAmount(Contract IERC20) returns (uint256) /*(ec01da3b)*/ <br/>coveredDebtOf(uint256) returns (uint128) /*(42e3e23d)*/ <br/>symbol() returns (string) /*(95d89b41)*/ <br/>isApprovedForAll(address,address) returns (bool) /*(e985e9c5)*/ <br/>getTokenDecimals(uint256) returns (uint8) /*(a7de07cd)*/ <br/>setNFTDescriptor(Contract IFlowNFTDescriptor) /*(7cad6cd1)*/ <br/>statusOf(uint256) returns (Flow.Status) /*(ad35efd4)*/ <br/>restartAndDeposit(uint256,UD21x18,uint128) /*(1f0cce58)*/  /*potentially_payable*/ <br/>getSnapshotTime(uint256) returns (uint40) /*(eb5710d8)*/ <br/>isVoided(uint256) returns (bool) /*(569f4c59)*/ <br/>void(uint256) /*(5ea2145b)*/  /*potentially_payable*/ <br/>nativeToken() returns (address) /*(e1758bd8)*/ <br/>pause(uint256) /*(136439dd)*/  /*potentially_payable*/ <br/>tokenURI(uint256) returns (string) /*(c87b56dd)*/ <br/>setComptroller(Contract ISablierComptroller) /*(8bad38dd)*/ <br/>withdraw(uint256,address,uint128) /*(fdd46d60)*/  /*potentially_payable*/ <br/>transferFrom(address,address,uint256) /*(23b872dd)*/ <br/>safeTransferFrom(address,address,uint256,bytes) /*(b88d4fde)*/ <br/>calculateMinFeeWei(uint256) returns (uint256) /*(cca138e5)*/ <br/>setApprovalForAll(address,bool) /*(a22cb465)*/ <br/>transferFeesToComptroller() /*(78f82ce7)*/ <br/>comptroller() returns (Contract ISablierComptroller) /*(5fe3b567)*/ <br/>isStream(uint256) returns (bool) /*(b8a3be66)*/ <br/>isTransferable(uint256) returns (bool) /*(b2564569)*/ <br/>create(address,address,UD21x18,uint40,Contract IERC20,bool) returns (uint256) /*(5f2a0beb)*/  /*potentially_payable*/ <br/>refundableAmountOf(uint256) returns (uint128) /*(1400ecec)*/ <br/>uncoveredDebtOf(uint256) returns (uint256) /*(bc7a2d6c)*/ <br/>withdrawableAmountOf(uint256) returns (uint128) /*(d975dfed)*/ <br/>nextStreamId() returns (uint256) /*(1e99d569)*/ <br/>nftDescriptor() returns (Contract IFlowNFTDescriptor) /*(44267570)*/ <br/>recover(Contract IERC20,address) /*(648bf774)*/ <br/>getRecipient(uint256) returns (address) /*(6d0cee75)*/ <br/>batch(bytes[]) returns (bytes[]) /*(1e897afb)*/  /*potentially_payable*/ <br/>getApproved(uint256) returns (address) /*(081812fc)*/ <br/>transferTokens(Contract IERC20,address,uint128) /*(28f8b77d)*/  /*potentially_payable*/ <br/>createAndDeposit(address,address,UD21x18,uint40,Contract IERC20,bool,uint128) returns (uint256) /*(36af277f)*/  /*potentially_payable*/ </td><td><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></td>
+</tr>

@@ -1,0 +1,24 @@
+Reports in /home/dok/web3/sabier/flow/emv-2-certora-26-Dec--23-23/Reports
+Start Fri Dec 26 23:23:42 UTC 2025
+[ForkJoinPool-1-worker-1] WARN ALWAYS - The type `ISablierComptroller.ProtocolFees` will not be accessible in CVL code
+Reason(s):
+	struct field `customFeesUSD` cannot be expressed in CVL: [mapping types are not supported]
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:6:5: Method declaration for SablierFlow.totalDebtOf(uint256) returns (uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:7:5: Method declaration for SablierFlow.coveredDebtOf(uint256) returns (uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:8:5: Method declaration for SablierFlow.uncoveredDebtOf(uint256) returns (uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:9:5: Method declaration for SablierFlow.refundableAmountOf(uint256) returns (uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:10:5: Method declaration for SablierFlow.ongoingDebtScaledOf(uint256) returns (uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:11:5: Method declaration for SablierFlow.depletionTimeOf(uint256) returns (uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:21:5: Method declaration for SablierFlow.deposit(uint256, uint128, address, address) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:22:5: Method declaration for SablierFlow.depositAndPause(uint256, uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:23:5: Method declaration for SablierFlow.withdraw(uint256, address, uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:24:5: Method declaration for SablierFlow.withdrawMax(uint256, address) returns (uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:25:5: Method declaration for SablierFlow.refund(uint256, uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:26:5: Method declaration for SablierFlow.refundMax(uint256) returns (uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:27:5: Method declaration for SablierFlow.refundAndPause(uint256, uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:28:5: Method declaration for SablierFlow.pause(uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+The scene contains 1 contracts:
+SablierFlow : 0xce4604a0000000000000000000000025
+Running initial transformations
+[ForkJoinPool-1-worker-28] WARN INLINER - at LTACCmd(ptr=CmdPointer(block=2288_1014_0_0_0_0, pos=16), cmd=ByteLongCopy R135:bv256 0x0 R134:bv256 tacM:bytemap@194 tacTmp!mcopy9062!9063:bytemap (1534:50174:0:0xce4604a0000000000000000000000025) // SablierFlow.sol), have non-strong copy output
+[ForkJoinPool-1-worker-11] WARN INLINER - At mcopy src LTACCmd(ptr=CmdPointer(block=18808_1015_0_0_0_0, pos=1), cmd=ByteLongCopy 0x0 R222:bv256 R221:bv256 tacTmp!mcopy6016!6017:bytemap tacM:bytemap@143 (1534:50174:0:0xce4604a0000000000000000000000025) // SablierFlow.sol) in SablierFlow-tokenURI(uint256), failed to project from IndexedNode(node=ArrayElement(v=Explicit(alloc=AbstractLocation(prevFPWriteIdx=0, nextFPWriteCmd=CmdPointer(block=5970_1017_0_0_0_0, pos=0), sort=DynamicBlock(eSz=1, lengthSym=(CmdPointer(block=19167_1020_0_0_0_0, pos=10), R177:bv256)))), elemSize=1), index=IntValue(lb=0, ub=115792089237316195423570985008687907853269984665640564039457584007913129639935), elementSize=1)

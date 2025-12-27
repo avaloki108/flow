@@ -1,0 +1,31 @@
+INFO:CryticCompile:'forge config --json' running
+INFO:CryticCompile:'/home/dok/tools/oyente_plus/venv/.solc-select/artifacts/solc-0.8.29/solc-0.8.29 --version' running
+INFO:CryticCompile:'/home/dok/tools/oyente_plus/venv/.solc-select/artifacts/solc-0.8.29/solc-0.8.29 @arbitrum/=node_modules/@arbitrum/ @chainlink/=node_modules/@chainlink/ @eth-optimism/=node_modules/@eth-optimism/ @offchainlabs/=node_modules/@offchainlabs/ @openzeppelin/=node_modules/@openzeppelin/ @prb/=node_modules/@prb/ @sablier/=node_modules/@sablier/ @scroll-tech/=node_modules/@scroll-tech/ @zksync/=node_modules/@zksync/ forge-std/=node_modules/forge-std/ src/SablierFlow.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --optimize --optimize-runs 1000 --evm-version shanghai --allow-paths .,/home/dok/web3/sabier/flow/src' running
+Traceback (most recent call last):
+  File "/home/dok/tools/oyente_plus/oyente/oyente.py", line 403, in <module>
+    exit(main())
+         ^^^^^^
+  File "/home/dok/tools/oyente_plus/oyente/oyente.py", line 397, in main
+    exit_code = analyze_solidity(args)
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dok/tools/oyente_plus/oyente/oyente.py", line 186, in analyze_solidity
+    inputs = helper.get_inputs(global_params.TARGET_CONTRACTS)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dok/tools/oyente_plus/oyente/input_helper.py", line 213, in get_inputs
+    source_map = SourceMap(
+                 ^^^^^^^^^^
+  File "/home/dok/tools/oyente_plus/oyente/source_map.py", line 55, in __init__
+    SourceMap.position_groups = SourceMap._load_position_groups()
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dok/tools/oyente_plus/oyente/source_map.py", line 272, in _load_position_groups
+    out = json.loads(out)
+          ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

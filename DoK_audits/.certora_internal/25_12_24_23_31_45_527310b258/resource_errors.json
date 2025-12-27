@@ -1,0 +1,17 @@
+{
+    "topics": [
+        {
+            "name": "type_check",
+            "messages": [
+                {
+                    "message": "Error in spec file (flow.spec:8:10): Syntax error: unexpected token near `.`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (flow.spec:15:10): Syntax error: unexpected token near `.`",
+                    "location": []
+                }
+            ]
+        }
+    ]
+}

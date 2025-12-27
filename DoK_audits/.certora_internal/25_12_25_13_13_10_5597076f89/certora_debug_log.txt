@@ -1,0 +1,1 @@
+Note: attribute msg value in CLI (Flow: link token+oracle, fix envfree timestamp mismatch) overrides value stored in conf file (Baseline access-control spec for SablierFlow)

@@ -1,0 +1,1 @@
+Note: attribute msg value in CLI (Flow constrain token reachability for DoS+aggregate) overrides value stored in conf file (Baseline access-control spec for SablierFlow)

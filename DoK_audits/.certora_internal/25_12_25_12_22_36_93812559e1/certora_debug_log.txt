@@ -1,0 +1,1 @@
+Note: attribute msg value in CLI (Flow spec hardened: add isStream guards + fix zero-amount rules) overrides value stored in conf file (Baseline access-control spec for SablierFlow)

@@ -1,0 +1,1 @@
+Note: attribute msg value in CLI (Smoke test for DataTypes) overrides value stored in conf file (Enhanced verification for DataTypes - web3-certora v2.0.0)

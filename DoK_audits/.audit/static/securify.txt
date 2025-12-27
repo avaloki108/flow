@@ -1,0 +1,100 @@
+## src/SablierFlow.sol
+Environment variable LD_LIBRARY_PATH not set. Setting it up...
+Traceback (most recent call last):
+  File "/home/dok/.local/bin/securify", line 7, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/__main__.py", line 275, in main
+    patterns = get_list_of_patterns(context=context,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/__main__.py", line 15, in get_list_of_patterns
+    pattern_classes = discover_patterns()
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/analyses/analysis.py", line 123, in discover_patterns
+    patterns.update(c.get())
+                    ^^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/analyses/patterns/static/static_analysis_patterns.py", line 16, in get
+    patterns = cls.__list_static_patterns()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/analyses/patterns/static/static_analysis_patterns.py", line 23, in __list_static_patterns
+    patterns = static_analysis.discover_patterns()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/staticanalysis/static_analysis.py", line 63, in discover_patterns
+    souffle_output, facts_out = souffle.run_souffle(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/staticanalysis/souffle/souffle.py", line 62, in run_souffle
+    souffle_output = souffle_wrapper(
+                     ^^^^^^^^^^^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/staticanalysis/souffle/wrapper.py", line 120, in souffle_wrapper
+    raise SouffleError(
+securify.staticanalysis.souffle.exceptions.SouffleError: Error during souffle execution:  
+
+Warning: No rules/facts defined for relation patternIncorrectInequalityPattern.compliantInContext in abstract-context-pattern.dl:9:8
+Warning: Variable comment only occurs once in abstract-context-pattern.dl:26:38
+Warning: Variable ctxString only occurs once in abstract-context-pattern.dl:26:81
+Warning: No rules/facts defined for relation patternUnusedStateVariablePattern.compliance in analysis-patterns.dl:29:8
+Warning: Variable callerFunction only occurs once in callstack-context.dl:20:26
+Warning: Variable callerFunction only occurs once in callstack-context.dl:28:26
+Warning: Variable callerFunction only occurs once in callstack-context.dl:37:26
+Warning: Variable callerTransfers only occurs once in callstack-context.dl:37:42
+Warning: Variable callerTag only occurs once in callstack-context.dl:37:59
+Warning: Variable thisBlock only occurs once in unused-return.dl:11:22
+Warning: Variable _c marked as singleton but occurs more than once in __semantics__.dl:23:146
+Warning: Variable _c marked as singleton but occurs more than once in __semantics__.dl:24:144
+Warning: Variable _c marked as singleton but occurs more than once in __semantics__.dl:27:111
+Warning: Variable _c marked as singleton but occurs more than once in __semantics__.dl:31:109
+Warning: Variable _c marked as singleton but occurs more than once in __semantics__.dl:33:141
+Warning: No rules/facts defined for relation warnings in util-debug.dl:5:7
+Error loading annotation data: Cannot open fact file annotation.facts
+
+
+## src/FlowNFTDescriptor.sol
+Environment variable LD_LIBRARY_PATH not set. Setting it up...
+Traceback (most recent call last):
+  File "/home/dok/.local/bin/securify", line 7, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/__main__.py", line 275, in main
+    patterns = get_list_of_patterns(context=context,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/__main__.py", line 15, in get_list_of_patterns
+    pattern_classes = discover_patterns()
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/analyses/analysis.py", line 123, in discover_patterns
+    patterns.update(c.get())
+                    ^^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/analyses/patterns/static/static_analysis_patterns.py", line 16, in get
+    patterns = cls.__list_static_patterns()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/analyses/patterns/static/static_analysis_patterns.py", line 23, in __list_static_patterns
+    patterns = static_analysis.discover_patterns()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/staticanalysis/static_analysis.py", line 63, in discover_patterns
+    souffle_output, facts_out = souffle.run_souffle(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/staticanalysis/souffle/souffle.py", line 62, in run_souffle
+    souffle_output = souffle_wrapper(
+                     ^^^^^^^^^^^^^^^^
+  File "/home/dok/.local/share/pipx/venvs/securify/lib/python3.12/site-packages/securify/staticanalysis/souffle/wrapper.py", line 120, in souffle_wrapper
+    raise SouffleError(
+securify.staticanalysis.souffle.exceptions.SouffleError: Error during souffle execution:  
+
+Warning: No rules/facts defined for relation patternIncorrectInequalityPattern.compliantInContext in abstract-context-pattern.dl:9:8
+Warning: Variable comment only occurs once in abstract-context-pattern.dl:26:38
+Warning: Variable ctxString only occurs once in abstract-context-pattern.dl:26:81
+Warning: No rules/facts defined for relation patternUnusedStateVariablePattern.compliance in analysis-patterns.dl:29:8
+Warning: Variable callerFunction only occurs once in callstack-context.dl:20:26
+Warning: Variable callerFunction only occurs once in callstack-context.dl:28:26
+Warning: Variable callerFunction only occurs once in callstack-context.dl:37:26
+Warning: Variable callerTransfers only occurs once in callstack-context.dl:37:42
+Warning: Variable callerTag only occurs once in callstack-context.dl:37:59
+Warning: Variable thisBlock only occurs once in unused-return.dl:11:22
+Warning: Variable _c marked as singleton but occurs more than once in __semantics__.dl:23:146
+Warning: Variable _c marked as singleton but occurs more than once in __semantics__.dl:24:144
+Warning: Variable _c marked as singleton but occurs more than once in __semantics__.dl:27:111
+Warning: Variable _c marked as singleton but occurs more than once in __semantics__.dl:31:109
+Warning: Variable _c marked as singleton but occurs more than once in __semantics__.dl:33:141
+Warning: No rules/facts defined for relation warnings in util-debug.dl:5:7
+Error loading annotation data: Cannot open fact file annotation.facts
+
+

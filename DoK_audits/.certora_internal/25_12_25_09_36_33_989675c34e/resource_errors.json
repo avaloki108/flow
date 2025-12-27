@@ -1,0 +1,25 @@
+{
+    "topics": [
+        {
+            "name": "type_check",
+            "messages": [
+                {
+                    "message": "Error in spec file (flow.spec:4:85): Syntax error: unexpected token near `;`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (flow.spec:7:71): Syntax error: unexpected token near `;`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (flow.spec:14:54): Syntax error: unexpected token near `;`",
+                    "location": []
+                },
+                {
+                    "message": "Error in spec file (flow.spec:16:107): Syntax error: unexpected token near `;`",
+                    "location": []
+                }
+            ]
+        }
+    ]
+}

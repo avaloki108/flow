@@ -1,0 +1,19 @@
+Reports in /home/dok/web3/sabier/flow/emv-3-certora-26-Dec--23-23/Reports
+Start Fri Dec 26 23:23:56 UTC 2025
+[ForkJoinPool-1-worker-1] WARN ALWAYS - The type `ISablierComptroller.ProtocolFees` will not be accessible in CVL code
+Reason(s):
+	struct field `customFeesUSD` cannot be expressed in CVL: [mapping types are not supported]
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:6:5: Method declaration for SablierFlow.totalDebtOf(uint256) returns (uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:7:5: Method declaration for SablierFlow.coveredDebtOf(uint256) returns (uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:8:5: Method declaration for SablierFlow.uncoveredDebtOf(uint256) returns (uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:9:5: Method declaration for SablierFlow.refundableAmountOf(uint256) returns (uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:10:5: Method declaration for SablierFlow.ongoingDebtScaledOf(uint256) returns (uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:11:5: Method declaration for SablierFlow.depletionTimeOf(uint256) returns (uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:21:5: Method declaration for SablierFlow.deposit(uint256, uint128, address, address) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:22:5: Method declaration for SablierFlow.depositAndPause(uint256, uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:23:5: Method declaration for SablierFlow.withdraw(uint256, address, uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:24:5: Method declaration for SablierFlow.withdrawMax(uint256, address) returns (uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:25:5: Method declaration for SablierFlow.refund(uint256, uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:26:5: Method declaration for SablierFlow.refundMax(uint256) returns (uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:27:5: Method declaration for SablierFlow.refundAndPause(uint256, uint128) is neither `envfree`, `optional`, nor summarized, so it has no effect.
+[ForkJoinPool-1-worker-1] WARN ALWAYS - Syntax warning in spec file CriticalExploits.spec:28:5: Method declaration for SablierFlow.pause(uint256) is neither `envfree`, `optional`, nor summarized, so it has no effect.
